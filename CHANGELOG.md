@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.3.1 (19 Sep 2026)
+
+- Repo housekeeping: `actions/checkout@v5` (Node 24), Dependabot monthly grouped for npm and Actions, CODEOWNERS. No asset changed.
+
 ## 1.3.0 (19 Sep 2026)
 
 - Every PNG and JPG in `products/` and `marks/` ships two generated siblings: `<name>.min.<ext>` (same format, no visible loss) and `<name>.webp` (q90, about a quarter of the size). Originals untouched. `npm run images` (sharp) makes them.
