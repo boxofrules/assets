@@ -1,24 +1,24 @@
 {
-  "$comment": "Which mark goes where. If a surface is not listed, ask James; never invent or recolour a mark.",
+  "$comment": "Which mark goes where. Vocabulary for every product: full = sign + wordmark, icon = sign alone, logotype = wordmark alone, stacked = sign over wordmark. Every product icon carries the Box Of Rules sign path from marks/box-of-rules/icon-*.svg, unchanged. If a surface is not listed, ask James; never invent, redraw or recolour a mark.",
   "marks": [
     {
       "file": "marks/box-of-rules/full-blue.svg",
       "product": "box-of-rules",
-      "variant": "full logo, blue",
-      "use": "the default Box Of Rules mark on any public surface: org profile, press, docs, og cards, the music site",
+      "variant": "full, blue",
+      "use": "the default Box Of Rules mark on any public Box Of Rules surface: org profile, press, docs, og cards, the music site",
       "never": "dark backgrounds where blue fails contrast: use full-white"
     },
     {
       "file": "marks/box-of-rules/full-white.svg",
       "product": "box-of-rules",
-      "variant": "full logo, white",
-      "use": "on ink/coal backgrounds when the blue does not read",
+      "variant": "full, white",
+      "use": "on ink/coal when the blue does not read",
       "never": ""
     },
     {
       "file": "marks/box-of-rules/full-black.svg",
       "product": "box-of-rules",
-      "variant": "full logo, black",
+      "variant": "full, black",
       "use": "print and light paper only",
       "never": ""
     },
@@ -26,7 +26,7 @@
       "file": "marks/box-of-rules/icon-blue.svg",
       "product": "box-of-rules",
       "variant": "icon, blue",
-      "use": "favicons, app icons, avatars, tight corners; PNG beside it for raster targets",
+      "use": "favicons, app icons, avatars, tight corners; PNG beside it for raster targets. THE sign: every product icon is built from this path",
       "never": ""
     },
     {
@@ -47,7 +47,7 @@
       "file": "marks/box-of-rules/logotype-blue.svg",
       "product": "box-of-rules",
       "variant": "logotype, blue",
-      "use": "the word-form beside a product lockup (the 'from Box Of Rules' line), headers",
+      "use": "the word-form beside a product full logo (the 'from Box Of Rules' line), headers",
       "never": ""
     },
     {
@@ -65,59 +65,101 @@
       "never": ""
     },
     {
-      "file": "marks/plugins/lockup.svg",
+      "file": "marks/plugins/full.svg",
       "product": "plugins",
-      "variant": "lockup: mark + PLUGINS",
+      "variant": "full: sign + PLUGINS",
       "use": "plugins.boxofrules.com header, the plugins download shelf README, anything that is the plugins store",
       "never": "as a Box Of Rules mark; it is the store's, not the brand's"
     },
     {
-      "file": "marks/plugins/mark.svg",
+      "file": "marks/plugins/icon.svg",
       "product": "plugins",
-      "variant": "mark only",
+      "variant": "icon",
       "use": "plugins store favicon and square avatars",
       "never": ""
     },
     {
-      "file": "marks/box-of-synths/mark-green.svg",
+      "file": "marks/box-of-synths/full-green.svg",
       "product": "box-of-synths",
-      "variant": "mark, moss green #5FD08A",
-      "use": "EVERY Box Of Synths surface: site, plugin, docs, thumbnails",
+      "variant": "full, green #5FD08A: sign in the dot ring + keys + BOX OF SYNTHS",
+      "use": "EVERY Box Of Synths header and horizontal surface: site nav, docs, plugin about panel, email header",
       "never": "the blue variant, ever (James, Sep 2026)"
     },
     {
-      "file": "marks/box-of-synths/mark-white.svg",
+      "file": "marks/box-of-synths/stacked-green.svg",
       "product": "box-of-synths",
-      "variant": "mark, white",
-      "use": "Synths mark on ink where green fails contrast",
+      "variant": "stacked, green",
+      "use": "square and portrait surfaces: og cards, store tiles, thumbnails",
       "never": ""
     },
     {
-      "file": "marks/box-of-synths/mark-blue.svg",
+      "file": "marks/box-of-synths/icon-green.svg",
       "product": "box-of-synths",
-      "variant": "mark, blue",
+      "variant": "icon, green",
+      "use": "favicons, the app icon, avatars, the site footer",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/logotype-green.svg",
+      "product": "box-of-synths",
+      "variant": "logotype, green: keys + BOX OF SYNTHS",
+      "use": "beside an icon that is already placed, or where the sign would repeat",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/full-white.svg",
+      "product": "box-of-synths",
+      "variant": "full, white",
+      "use": "on green or busy backgrounds where the green does not read",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/stacked-white.svg",
+      "product": "box-of-synths",
+      "variant": "stacked, white",
+      "use": "as full-white, portrait",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/icon-white.svg",
+      "product": "box-of-synths",
+      "variant": "icon, white",
+      "use": "icon where the green does not read",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/logotype-white.svg",
+      "product": "box-of-synths",
+      "variant": "logotype, white",
+      "use": "logotype where the green does not read",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/icon-blue.svg",
+      "product": "box-of-synths",
+      "variant": "icon, blue",
       "use": "kept for the record only",
       "never": "any live surface"
     },
     {
-      "file": "marks/synth-directory/mark.svg",
+      "file": "marks/synth-directory/icon.svg",
       "product": "synth-directory",
-      "variant": "mark",
-      "use": "synth.directory header, favicon, og",
+      "variant": "icon",
+      "use": "synth.directory favicon and og; the site header uses the Box Of Rules full logo",
       "never": ""
     },
     {
-      "file": "marks/waveform-analyser/lockup.svg",
+      "file": "marks/waveform-analyser/full.svg",
       "product": "waveform-analyser",
-      "variant": "lockup",
-      "use": "waveformanalyser.com header, docs",
+      "variant": "full",
+      "use": "waveformanalyser.com docs and og",
       "never": ""
     },
     {
-      "file": "marks/waveform-analyser/mark.svg",
+      "file": "marks/waveform-analyser/icon.svg",
       "product": "waveform-analyser",
-      "variant": "mark",
-      "use": "Waveform Analyser favicon and avatars",
+      "variant": "icon",
+      "use": "Waveform Analyser favicon and avatars; the site header uses the Box Of Rules full logo",
       "never": ""
     }
   ]
