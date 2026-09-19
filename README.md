@@ -1,6 +1,6 @@
-# @boxofrules/brand
+# @boxofrules/assets
 
-The Box Of Rules brand kit, and the law for using it. Marks, fonts, tokens, one manifest that says which mark goes where. Every site, service, plugin doc and README takes its brand from here. Nobody draws, recolours or "approximates" a mark; if a surface is not covered by `manifest.json`, ask James.
+Every approved Box Of Rules asset, and the law for using it. Today: the brand kit, marks, fonts, tokens. Next: the plugin imagery (UI shots, gallery renders, og cards, store thumbnails) that people and agents keep getting wrong, so any asset a page or a README needs is confirmed against one manifest rather than picked from a folder. Marks, fonts, tokens, one manifest that says which mark goes where. Every site, service, plugin doc and README takes its brand from here. Nobody draws, recolours or "approximates" a mark; if a surface is not covered by `manifest.json`, ask James.
 
 ## The rules
 
@@ -11,7 +11,7 @@ The Box Of Rules brand kit, and the law for using it. Marks, fonts, tokens, one 
 5. **Support badges** on public READMEs mirror boxofrules.com/support: Support, PayPal, Patreon, Ko-fi, in that order. The URLs are in `tokens.json`.
 6. **Masters live in the vault** (`_vault/08 Assets/logos`, `_vault/08 Assets/fonts`). This package is the distributable copy; a change to a master is a version bump here, never an edit in a site.
 
-## What is in it
+## What is in it (1.0.x: the brand kit)
 
 | Path | Contents |
 |---|---|
@@ -29,11 +29,11 @@ The Box Of Rules brand kit, and the law for using it. Marks, fonts, tokens, one 
 ## Using it
 
 ```sh
-npm install github:boxofrules/brand#v1.0.0
+npm install github:boxofrules/assets#v1.0.1
 ```
 
-- **Laravel sites:** import `@boxofrules/brand/tokens.css` and `fonts.css` in the site's CSS build, or copy `marks/` and `fonts/` into `public/assets/brand/` at build. `bor/brand` (PHP) becomes a thin wrapper that reads `tokens.json` for the constants it exposes.
-- **Cloudflare workers, docs, og-card builders:** `import { tokens, mark } from '@boxofrules/brand'`.
+- **Laravel sites:** import `@boxofrules/assets/tokens.css` and `fonts.css` in the site's CSS build, or copy `marks/` and `fonts/` into `public/assets/brand/` at build. `bor/brand` (PHP) becomes a thin wrapper that reads `tokens.json` for the constants it exposes.
+- **Cloudflare workers, docs, og-card builders:** `import { tokens, mark } from '@boxofrules/assets'`.
 - **Anywhere else:** copy the exact file the manifest names.
 
 Pin the version. Update by bumping the tag, and read `CHANGELOG.md` for what moved.

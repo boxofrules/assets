@@ -1,4 +1,4 @@
-// @boxofrules/brand: tokens, the mark manifest, and a resolver so nobody guesses a file name.
+// @boxofrules/assets: tokens, the mark manifest, and a resolver so nobody guesses a file name.
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -10,7 +10,7 @@ export const manifest = JSON.parse(readFileSync(join(here, 'manifest.json'), 'ut
 /** Absolute path of a mark by product + variant, e.g. mark('box-of-synths', 'mark, moss green #5FD08A'). Throws rather than guess. */
 export function mark(product, variantStartsWith) {
   const m = manifest.marks.find(x => x.product === product && x.variant.startsWith(variantStartsWith));
-  if (!m) throw new Error(`@boxofrules/brand: no mark for ${product} / ${variantStartsWith}; see manifest.json`);
+  if (!m) throw new Error(`@boxofrules/assets: no mark for ${product} / ${variantStartsWith}; see manifest.json`);
   return join(here, m.file);
 }
 

@@ -1,12 +1,12 @@
 {
-  "name": "@boxofrules/brand",
-  "version": "1.0.0",
-  "description": "Box Of Rules brand kit: marks, fonts, tokens and the rules for using them. One source for every site, service and plugin doc.",
+  "name": "@boxofrules/assets",
+  "version": "1.0.1",
+  "description": "Box Of Rules assets: the brand kit (marks, fonts, tokens) and, next, every approved plugin image, with a manifest that says what each asset is and where it goes. One source for every site, service, plugin doc and agent.",
   "private": true,
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/boxofrules/brand.git"
+    "url": "git+ssh://git@github.com/boxofrules/assets.git"
   },
   "type": "module",
   "main": "index.js",
