@@ -7,7 +7,7 @@ Every approved Box Of Rules asset, and the law for using it. Today: the brand ki
 1. **Box Of Rules blue leads every public Box Of Rules visual.** Amber is the accent. `marks/box-of-rules/full-blue.svg` is the default mark; white on ink or coal only when blue fails contrast; black for print.
 2. **One sign.** Every product icon carries the Box Of Rules sign, the exact path from `marks/box-of-rules/icon-*.svg`, never a redraw. Products differ by colour and by what sits around the sign: the plugins full logo puts it on the amber waveform in violet; Box Of Synths puts it in a ring of dots in moss green `#5FD08A`, never blue; Synth.Directory and Waveform Analyser have their own icons and use the Box Of Rules full logo in their headers. Check the manifest before picking.
 3. **One vocabulary.** `full` = sign + wordmark, `icon` = sign alone, `logotype` = wordmark alone, `card` = the padded 5:3 version for og and social. Same words for every product.
-4. **Fonts, the standard for every site:** Syne for headings, Barlow for everything else (body, labels, buttons, tables). Anton, Oswald and Unbounded are retired from type; they survive only as outlined paths inside marks. JetBrains Mono is the plugin-UI datasheet face and is not part of this kit. Sites move to the standard on their turns; until then a site may still serve the old faces, but the standard is defined here.
+4. **Fonts, the standard for every site:** Syne for headings, Barlow for everything else (body, labels, buttons, tables). Two exceptions: plugins.boxofrules.com headings are Unbounded, and synth.directory stays on Barlow for everything, which is why Unbounded is in `fonts/`; no other site or product uses it. Anton and Oswald are retired. JetBrains Mono is the plugin-UI datasheet face and is not part of this kit. `manifest.json` has a `typography` section stating each product's heading, body and wordmark face. Sites move to the standard on their turns.
 5. **Name and tagline:** "Box Of Rules", capital O, always. Tagline "Digitally Analogue". No em dashes in public copy.
 6. **Support badges** on public READMEs mirror boxofrules.com/support: Support, PayPal, Patreon, Ko-fi, in that order. The URLs are in `tokens.json`.
 7. **Masters live in the vault** (`_vault/08 Assets/logos`, `_vault/08 Assets/fonts`). This package is the distributable copy; a change to a master is a version bump here, never an edit in a site.
@@ -16,18 +16,23 @@ Every approved Box Of Rules asset, and the law for using it. Today: the brand ki
 
 | Path | Contents |
 |---|---|
-| `marks/box-of-rules/` | full logo, icon and logotype, each in blue, white and black (SVG; PNG for full and icon) |
-| `marks/plugins/` | full and icon |
-| `marks/box-of-synths/` | full, card, icon and logotype in green (the ones to use) and white; the blue icon for the record only |
-| `marks/synth-directory/`, `marks/waveform-analyser/` | their icons; Waveform Analyser's full |
-| `fonts/` | Syne (variable) and Barlow 400 to 700 as woff2, with both OFL texts |
+| `marks/box-of-rules/` | full, card, icon and logotype, each in blue, white and black, SVG and PNG |
+| `marks/accounts/` | My Box Of, the account hub: full, card, icon and logotype in blue and white, SVG and PNG; the icon IS the Box Of Rules sign |
+| `marks/plugins/` | full, card, icon and logotype, SVG and PNG |
+| `marks/box-of-synths/` | full, card, icon and logotype in green (the ones to use) and white, SVG and PNG; the blue icon for the record only |
+| `marks/synth-directory/` | Synth.Directory: full, card, icon and logotype in a light and a dark theme, SVG and PNG; the fader is the dot |
+| `marks/waveform-analyser/` | its icon and full |
+| `fonts/` | Syne (variable), Barlow 400 to 700, and Unbounded 700 for plugins headings only, as woff2 with their OFL texts |
 | `css/tokens.css` | the colour and type tokens, core plus per-product scopes |
 | `css/fonts.css` | the `@font-face` rules |
 | `tokens.json` | the same tokens for scripts, og-card builders, plugin docs |
-| `manifest.json` | every mark with its product, variant, where to use it and where never to |
+| `manifest.json` | every mark with its product, variant, where to use it and where never to; and each product's typography |
+| `web/<product>/` | favicons, app icons, `site.webmanifest` and a `head.html` snippet per product, generated from the product's icon on a white circle; sites copy the folder into `public/` |
 | `index.js` | `tokens`, `manifest`, `mark(product, variant)` which throws rather than guess, `--check` |
 
 ## Using it
+
+**Favicons and app icons:** copy `web/<product>/` into the site's `public/` root and paste `head.html` into the layout's `<head>`. Regenerate with `npm run web-icons` after an icon changes.
 
 ```sh
 npm install github:boxofrules/assets#v1.1.1

@@ -16,11 +16,11 @@ export function mark(product, variantStartsWith) {
 
 /** Every mark the manifest names, with whether the file exists (the package's own check). */
 export function check() {
-  return manifest.marks.map(m => ({ file: m.file, ok: existsSync(join(here, m.file)) }));
+  return manifest.marks.flatMap(m => [{ file: m.file, ok: existsSync(join(here, m.file)) }, ...(m.png ? [{ file: m.png, ok: existsSync(join(here, m.png)) }] : [])]);
 }
 
 if (process.argv.includes('--check')) {
   const rows = check(); const bad = rows.filter(r => !r.ok);
-  console.log(`${rows.length - bad.length}/${rows.length} marks present`);
+  console.log(`${rows.length - bad.length}/${rows.length} files present (svg + png)`);
   if (bad.length) { bad.forEach(r => console.log('MISSING', r.file)); process.exit(1); }
 }

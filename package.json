@@ -20,16 +20,18 @@
     "./fonts/*": "./fonts/*"
   },
   "files": [
-    "index.js",
+    "CHANGELOG.md",
+    "README.md",
     "css",
     "fonts",
+    "index.js",
+    "manifest.json",
     "marks",
     "tokens.json",
-    "manifest.json",
-    "README.md",
-    "CHANGELOG.md"
+    "web"
   ],
   "scripts": {
-    "check": "node index.js --check"
+    "check": "node index.js --check",
+    "web-icons": "python3 tools/web-icons.py"
   }
 }
