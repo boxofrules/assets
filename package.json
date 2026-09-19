@@ -36,7 +36,8 @@
   "scripts": {
     "check": "node index.js --check",
     "web-icons": "python3 tools/web-icons.py",
-    "publish-cdn": "tools/publish-cdn.sh"
+    "publish-cdn": "tools/publish-cdn.sh",
+    "images": "node tools/images.mjs"
   },
   "homepage": "https://boxofrules.com",
   "publishConfig": {
@@ -50,5 +51,8 @@
     "fonts",
     "logos",
     "plugins"
-  ]
+  ],
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
 }

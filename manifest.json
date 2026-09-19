@@ -481,6 +481,7 @@
           }
         }
       }
-    }
+    },
+    "$optimised": "Every raster in products/ and marks/ has two generated siblings beside it: <name>.min.<ext> (same format, smaller, no visible loss: PNG lossless, JPEG mozjpeg q90) and <name>.webp (q90). Originals are untouched and are what a version folder guarantees. Web pages use .webp with the .min fallback; link the original when fidelity matters (press, print). Made by `npm run images` (tools/images.mjs, sharp)."
   }
 }
