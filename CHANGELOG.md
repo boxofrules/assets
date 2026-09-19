@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.4.0 (20 Sep 2026)
+
+- New product category `products/music/<slug>/cover.jpg`: the Box Of Rules band's single artwork, one canonical square cover per release, `.min`/`.webp` siblings generated the same way as plugin pictures. Four releases added: `tax-wealth-not-work` (the artist's 5000x5000 master, matches the site's `twnw-hero.jpg` at higher resolution), `real-fake-paradise` (Elias Kopp ft. Box Of Rules), `regrets-whats-next`, `bulls-on-parade`. Slugs match the `releases` table in website-boxofrules.com. The debut EP *Drums. Vocals. Bass* is not included yet, it has no artwork published on the site. `manifest.json` gains `products.music`; `index.js` gains `musicCover(slug)` and `--check` now covers it too.
+
 ## 1.3.1 (19 Sep 2026)
 
 - Repo housekeeping: `actions/checkout@v5` (Node 24), Dependabot monthly grouped for npm and Actions, CODEOWNERS. No asset changed.

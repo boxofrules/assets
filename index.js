@@ -25,12 +25,22 @@ export function product(slug, file, version = 'latest') {
   return join(here, version === 'latest' ? p.latest : p.versions[v].dir, file);
 }
 
+/** Absolute path of a music release's cover, e.g. musicCover('tax-wealth-not-work'). Throws rather than guess. */
+export function musicCover(slug) {
+  const r = manifest.products?.music?.[slug];
+  if (!r) throw new Error(`@boxofrules/assets: no music release ${slug}; see manifest.json products.music`);
+  return join(here, r.dir, r.cover);
+}
+
 /** Every mark the manifest names, with whether the file exists (the package's own check). */
 export function check() {
   const marks = manifest.marks.flatMap(m => [{ file: m.file, ok: existsSync(join(here, m.file)) }, ...(m.png ? [{ file: m.png, ok: existsSync(join(here, m.png)) }] : [])]);
   const products = Object.values(manifest.products?.plugins ?? {}).flatMap(p => Object.values(p.versions).flatMap(v => Object.keys(v.files).flatMap(f => [
     { file: v.dir + f, ok: existsSync(join(here, v.dir, f)) }, { file: p.latest + f, ok: existsSync(join(here, p.latest, f)) }])));
-  return [...marks, ...products];
+  const music = Object.values(manifest.products?.music ?? {})
+    .filter(r => r.cover)
+    .map(r => ({ file: r.dir + r.cover, ok: existsSync(join(here, r.dir, r.cover)) }));
+  return [...marks, ...products, ...music];
 }
 
 if (process.argv.includes('--check')) {
