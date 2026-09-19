@@ -1,6 +1,6 @@
 # @boxofrules/assets changelog
 
-## Unreleased
+## 1.3.0 (19 Sep 2026)
 
 - Every PNG and JPG in `products/` and `marks/` ships two generated siblings: `<name>.min.<ext>` (same format, no visible loss) and `<name>.webp` (q90, about a quarter of the size). Originals untouched. `npm run images` (sharp) makes them.
 - CDN publish is one checksummed `rclone sync` per target (seconds) instead of a wrangler process per file (ten minutes on Actions). Needs the org secrets `R2_ACCESS_KEY_ID` and `R2_SECRET_ACCESS_KEY`.
