@@ -6,7 +6,7 @@ Every approved Box Of Rules asset, and the law for using it. Today: the brand ki
 
 1. **Box Of Rules blue leads every public Box Of Rules visual.** Amber is the accent. `marks/box-of-rules/full-blue.svg` is the default mark; white on ink or coal only when blue fails contrast; black for print.
 2. **One sign.** Every product icon carries the Box Of Rules sign, the exact path from `marks/box-of-rules/icon-*.svg`, never a redraw. Products differ by colour and by what sits around the sign: the plugins full logo puts it on the amber waveform in violet; Box Of Synths puts it in a ring of dots in moss green `#5FD08A`, never blue; Synth.Directory and Waveform Analyser have their own icons and use the Box Of Rules full logo in their headers. Check the manifest before picking.
-3. **One vocabulary.** `full` = sign + wordmark, `icon` = sign alone, `logotype` = wordmark alone, `stacked` = sign over wordmark. Same words for every product.
+3. **One vocabulary.** `full` = sign + wordmark, `icon` = sign alone, `logotype` = wordmark alone, `card` = the padded 5:3 version for og and social. Same words for every product.
 4. **Fonts:** Anton for big uppercase display, Oswald for labels and buttons at 600, Barlow for body. JetBrains Mono is the plugin-UI datasheet face and is not part of this kit.
 5. **Name and tagline:** "Box Of Rules", capital O, always. Tagline "Digitally Analogue". No em dashes in public copy.
 6. **Support badges** on public READMEs mirror boxofrules.com/support: Support, PayPal, Patreon, Ko-fi, in that order. The URLs are in `tokens.json`.
@@ -18,7 +18,7 @@ Every approved Box Of Rules asset, and the law for using it. Today: the brand ki
 |---|---|
 | `marks/box-of-rules/` | full logo, icon and logotype, each in blue, white and black (SVG; PNG for full and icon) |
 | `marks/plugins/` | full and icon |
-| `marks/box-of-synths/` | full, stacked, icon and logotype in green (the ones to use) and white; the blue icon for the record only |
+| `marks/box-of-synths/` | full, card, icon and logotype in green (the ones to use) and white; the blue icon for the record only |
 | `marks/synth-directory/`, `marks/waveform-analyser/` | their icons; Waveform Analyser's full |
 | `fonts/` | Anton, Oswald, Barlow as woff2, OFL |
 | `css/tokens.css` | the colour and type tokens, core plus per-product scopes |

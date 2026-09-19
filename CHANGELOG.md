@@ -2,7 +2,7 @@
 
 ## 1.1.0 (19 Sep 2026)
 
-The sign, fixed. Every product icon and full logo had carried a redrawn approximation of the Box Of Rules sign from the Synths logo pass (heavier B bar, different R leg); all now embed the exact master path at the same size and position. Box Of Synths gains its full (sign + keys + BOX OF SYNTHS), stacked and logotype files in green and white. One vocabulary for every product: full, icon, logotype, stacked. Renames: plugins lockup -> full, mark -> icon; waveform-analyser likewise; synth-directory mark -> icon; box-of-synths mark-* -> icon-*. 23 marks.
+The sign, fixed. Every product icon and full logo had carried a redrawn approximation of the Box Of Rules sign from the Synths logo pass (heavier B bar, different R leg); all now embed the exact master path at the same size and position. Box Of Synths gains its full (sign + keys + BOX OF SYNTHS), card (1000x600, the padded 5:3 version for og and social) and logotype files in green and white. One vocabulary for every product: full, icon, logotype, card. Renames: plugins lockup -> full, mark -> icon; waveform-analyser likewise; synth-directory mark -> icon; box-of-synths mark-* -> icon-*. 23 marks.
 
 ## 1.0.1 (19 Sep 2026)
 

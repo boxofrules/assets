@@ -1,5 +1,5 @@
 {
-  "$comment": "Which mark goes where. Vocabulary for every product: full = sign + wordmark, icon = sign alone, logotype = wordmark alone, stacked = sign over wordmark. Every product icon carries the Box Of Rules sign path from marks/box-of-rules/icon-*.svg, unchanged. If a surface is not listed, ask James; never invent, redraw or recolour a mark.",
+  "$comment": "Which mark goes where. Vocabulary for every product: full = sign + wordmark, icon = sign alone, logotype = wordmark alone, card = the padded 5:3 version for og/social. Every product icon carries the Box Of Rules sign path from marks/box-of-rules/icon-*.svg, unchanged. If a surface is not listed, ask James; never invent, redraw or recolour a mark.",
   "marks": [
     {
       "file": "marks/box-of-rules/full-blue.svg",
@@ -86,10 +86,10 @@
       "never": "the blue variant, ever (James, Sep 2026)"
     },
     {
-      "file": "marks/box-of-synths/stacked-green.svg",
+      "file": "marks/box-of-synths/card-green.svg",
       "product": "box-of-synths",
-      "variant": "stacked, green",
-      "use": "square and portrait surfaces: og cards, store tiles, thumbnails",
+      "variant": "card, green, 1000x600: sign in the ring left, keys + BOX OF SYNTHS right, padded",
+      "use": "og and social cards, store tiles, anything 5:3; the site nav uses full-green",
       "never": ""
     },
     {
@@ -114,10 +114,10 @@
       "never": ""
     },
     {
-      "file": "marks/box-of-synths/stacked-white.svg",
+      "file": "marks/box-of-synths/card-white.svg",
       "product": "box-of-synths",
-      "variant": "stacked, white",
-      "use": "as full-white, portrait",
+      "variant": "card, white",
+      "use": "as card-green where the green does not read",
       "never": ""
     },
     {
