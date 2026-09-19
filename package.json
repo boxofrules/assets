@@ -32,6 +32,7 @@
   ],
   "scripts": {
     "check": "node index.js --check",
-    "web-icons": "python3 tools/web-icons.py"
+    "web-icons": "python3 tools/web-icons.py",
+    "publish-cdn": "tools/publish-cdn.sh"
   }
 }

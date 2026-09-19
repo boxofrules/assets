@@ -28,9 +28,12 @@ Every approved Box Of Rules asset, and the law for using it. Today: the brand ki
 | `tokens.json` | the same tokens for scripts, og-card builders, plugin docs |
 | `manifest.json` | every mark with its product, variant, where to use it and where never to; and each product's typography |
 | `web/<product>/` | favicons, app icons, `site.webmanifest` and a `head.html` snippet per product, generated from the product's icon on a white circle; sites copy the folder into `public/` |
+| `tools/` | `web-icons.py` (favicon sets), `publish-cdn.sh` (push a version to cdn.boxofrules.com) |
 | `index.js` | `tokens`, `manifest`, `mark(product, variant)` which throws rather than guess, `--check` |
 
 ## Using it
+
+**From the CDN:** every release is published to `https://cdn.boxofrules.com/v<version>/...` (immutable, cached a year: use these in emails and anywhere a URL must never change) and `https://cdn.boxofrules.com/latest/...` (cached an hour). Same paths as this repo, e.g. `/v1.2.0/marks/box-of-rules/full-blue.svg`, `/latest/css/tokens.css`. CORS allows the Box Of Rules domains, so fonts load cross-origin. First-party sites still copy the package into `public/` (see below); the CDN is for emails, og cards, third-party pages and docs.
 
 **Favicons and app icons:** copy `web/<product>/` into the site's `public/` root and paste `head.html` into the layout's `<head>`. Regenerate with `npm run web-icons` after an icon changes.
 
