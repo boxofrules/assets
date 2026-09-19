@@ -81,7 +81,7 @@
     {
       "file": "marks/box-of-synths/full-green.svg",
       "product": "box-of-synths",
-      "variant": "full, green #5FD08A: sign in the dot ring + keys + BOX OF SYNTHS",
+      "variant": "full, green #5FD08A: sign in the dot ring, then BOX OF SYNTHS with the keys under it",
       "use": "EVERY Box Of Synths header and horizontal surface: site nav, docs, plugin about panel, email header",
       "never": "the blue variant, ever (James, Sep 2026)"
     },
@@ -102,7 +102,7 @@
     {
       "file": "marks/box-of-synths/logotype-green.svg",
       "product": "box-of-synths",
-      "variant": "logotype, green: keys + BOX OF SYNTHS",
+      "variant": "logotype, green: BOX OF SYNTHS with the keys under it",
       "use": "beside an icon that is already placed, or where the sign would repeat",
       "never": ""
     },
