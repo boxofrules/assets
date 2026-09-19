@@ -1,6 +1,6 @@
 # @boxofrules/assets changelog
 
-## Unreleased (1.2.0)
+## 1.2.0 (19 Sep 2026)
 
 - `products/plugins/<slug>/<version>/`: the approved imagery for every shipped plugin at its shipped version (Box Of Bass 1.2.2, Picking Fingers 1.1.0, Focus 1.0.1, BR108 1.0.0): the interface shot, galleries, bundle icon, Anagram block, og card, home band and release post, taken from what plugins.boxofrules.com serves today. `latest/` beside the versions is the copy to link. On the CDN they sit at the root, `cdn.boxofrules.com/products/plugins/<slug>/<version|latest>/`, versioned by the plugin, and the sites load them from there. Listed in the manifest's `products` section; `product(slug, file, version)` in `index.js` resolves them and `--check` covers them.
 - Favicons fill the tile: the sign takes 92% of the small favicons and 84% of the app icons (was 62%, a dot in a browser tab). Plugins and Waveform Analyser, whose icons are wide, get the sign alone in the product colour for the 16/32/48 sizes.
