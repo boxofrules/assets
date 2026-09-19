@@ -1,0 +1,124 @@
+{
+  "$comment": "Which mark goes where. If a surface is not listed, ask James; never invent or recolour a mark.",
+  "marks": [
+    {
+      "file": "marks/box-of-rules/full-blue.svg",
+      "product": "box-of-rules",
+      "variant": "full logo, blue",
+      "use": "the default Box Of Rules mark on any public surface: org profile, press, docs, og cards, the music site",
+      "never": "dark backgrounds where blue fails contrast: use full-white"
+    },
+    {
+      "file": "marks/box-of-rules/full-white.svg",
+      "product": "box-of-rules",
+      "variant": "full logo, white",
+      "use": "on ink/coal backgrounds when the blue does not read",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/full-black.svg",
+      "product": "box-of-rules",
+      "variant": "full logo, black",
+      "use": "print and light paper only",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/icon-blue.svg",
+      "product": "box-of-rules",
+      "variant": "icon, blue",
+      "use": "favicons, app icons, avatars, tight corners; PNG beside it for raster targets",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/icon-white.svg",
+      "product": "box-of-rules",
+      "variant": "icon, white",
+      "use": "icon on ink/coal",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/icon-black.svg",
+      "product": "box-of-rules",
+      "variant": "icon, black",
+      "use": "print only",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/logotype-blue.svg",
+      "product": "box-of-rules",
+      "variant": "logotype, blue",
+      "use": "the word-form beside a product lockup (the 'from Box Of Rules' line), headers",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/logotype-white.svg",
+      "product": "box-of-rules",
+      "variant": "logotype, white",
+      "use": "logotype on ink/coal",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-rules/logotype-black.svg",
+      "product": "box-of-rules",
+      "variant": "logotype, black",
+      "use": "print only",
+      "never": ""
+    },
+    {
+      "file": "marks/plugins/lockup.svg",
+      "product": "plugins",
+      "variant": "lockup: mark + PLUGINS",
+      "use": "plugins.boxofrules.com header, the plugins download shelf README, anything that is the plugins store",
+      "never": "as a Box Of Rules mark; it is the store's, not the brand's"
+    },
+    {
+      "file": "marks/plugins/mark.svg",
+      "product": "plugins",
+      "variant": "mark only",
+      "use": "plugins store favicon and square avatars",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/mark-green.svg",
+      "product": "box-of-synths",
+      "variant": "mark, moss green #5FD08A",
+      "use": "EVERY Box Of Synths surface: site, plugin, docs, thumbnails",
+      "never": "the blue variant, ever (James, Sep 2026)"
+    },
+    {
+      "file": "marks/box-of-synths/mark-white.svg",
+      "product": "box-of-synths",
+      "variant": "mark, white",
+      "use": "Synths mark on ink where green fails contrast",
+      "never": ""
+    },
+    {
+      "file": "marks/box-of-synths/mark-blue.svg",
+      "product": "box-of-synths",
+      "variant": "mark, blue",
+      "use": "kept for the record only",
+      "never": "any live surface"
+    },
+    {
+      "file": "marks/synth-directory/mark.svg",
+      "product": "synth-directory",
+      "variant": "mark",
+      "use": "synth.directory header, favicon, og",
+      "never": ""
+    },
+    {
+      "file": "marks/waveform-analyser/lockup.svg",
+      "product": "waveform-analyser",
+      "variant": "lockup",
+      "use": "waveformanalyser.com header, docs",
+      "never": ""
+    },
+    {
+      "file": "marks/waveform-analyser/mark.svg",
+      "product": "waveform-analyser",
+      "variant": "mark",
+      "use": "Waveform Analyser favicon and avatars",
+      "never": ""
+    }
+  ]
+}

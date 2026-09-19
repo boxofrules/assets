@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Synth.Directory">
+  <text x="60" y="66" text-anchor="middle" font-family="Archivo, system-ui, sans-serif" font-size="58" letter-spacing="-1" fill="#17150F"><tspan font-weight="400">S</tspan><tspan fill="#F2A20C" font-weight="800">.</tspan><tspan font-weight="800">D</tspan></text>
+  <g fill="none" stroke="#17150F" stroke-width="3" stroke-linejoin="round">
+    <path d="M16 82 H104 V110 H16 Z"/>
+    <path d="M28.6 82 V110 M41.1 82 V110 M53.7 82 V110 M66.3 82 V110 M78.9 82 V110 M91.4 82 V110"/>
+  </g>
+  <g fill="#17150F"><rect x="24" y="82" width="9" height="17"/><rect x="37" y="82" width="9" height="17"/><rect x="62" y="82" width="9" height="17"/><rect x="75" y="82" width="9" height="17"/><rect x="87" y="82" width="9" height="17"/></g>
+</svg>

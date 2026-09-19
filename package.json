@@ -1,0 +1,35 @@
+{
+  "name": "@boxofrules/brand",
+  "version": "1.0.0",
+  "description": "Box Of Rules brand kit: marks, fonts, tokens and the rules for using them. One source for every site, service and plugin doc.",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boxofrules/brand.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./tokens.css": "./css/tokens.css",
+    "./fonts.css": "./css/fonts.css",
+    "./tokens.json": "./tokens.json",
+    "./manifest.json": "./manifest.json",
+    "./marks/*": "./marks/*",
+    "./fonts/*": "./fonts/*"
+  },
+  "files": [
+    "index.js",
+    "css",
+    "fonts",
+    "marks",
+    "tokens.json",
+    "manifest.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "check": "node index.js --check"
+  }
+}

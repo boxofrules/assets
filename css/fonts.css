@@ -1,0 +1,5 @@
+/* @boxofrules/brand: the brand faces. Serve the fonts/ directory beside this file, or rewrite the urls at build. */
+@font-face { font-family: 'Anton';  src: url('../fonts/anton-400.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Oswald'; src: url('../fonts/oswald.woff2') format('woff2'); font-weight: 200 700; font-display: swap; }
+@font-face { font-family: 'Barlow'; src: url('../fonts/barlow-400.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Barlow'; src: url('../fonts/barlow-500.woff2') format('woff2'); font-weight: 500; font-display: swap; }

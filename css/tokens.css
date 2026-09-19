@@ -1,0 +1,37 @@
+/* @boxofrules/brand: the design tokens. One source; every site and surface reads these.
+   Core = Box Of Rules. Products override or extend under their own scope. */
+:root {
+  --ink:    #0B0B0C;
+  --coal:   #131210;
+  --coal-2: #1C1A17;
+  --bone:   #ECE6D8;
+  --bone-2: #B7B0A0;
+  --mute:   #948D82;
+  --line:   #2A2722;
+  --amber:  #F2A20C;   /* the accent everywhere; the CTA colour on plugins.boxofrules.com */
+  --amber-2:#FFB938;
+  --blue:   #69AFBF;   /* the Box Of Rules mark colour: blue LEADS every public Box Of Rules visual */
+  --cyan:   #5FB4C4;   /* status: info; the parent-brand blue inside product palettes */
+  --blood:  #C42424;   /* status: errors, destructive */
+  --green:  #6FBF73;   /* status: success, activated */
+  --font-display: 'Anton', Impact, sans-serif;            /* big headers, uppercase */
+  --font-label:   'Oswald', 'Arial Narrow', sans-serif;   /* subheads, labels, buttons, uppercase, 600 */
+  --font-body:    'Barlow', system-ui, sans-serif;        /* body */
+  --maxw: 1240px;
+  --ease: cubic-bezier(.2,.6,.2,1);
+}
+/* plugins.boxofrules.com (James, 13 Sep 2026): violet is identity and navigation, never a button; amber is every CTA */
+[data-brand="plugins"], .brand-plugins {
+  --violet:      #8E5EB0;
+  --violet-2:    #9B59B6;
+  --violet-deep: #5E3A7A;
+  --violet-ink:  #2A1C36;
+  --cta:   var(--amber);
+  --cta-2: var(--amber-2);
+}
+/* Box Of Synths: moss green mark, never the blue variant */
+[data-brand="box-of-synths"], .brand-box-of-synths { --synths-green: #5FD08A; }
+/* Synth.Directory */
+[data-brand="synth-directory"], .brand-synth-directory { --sd-ink: #17150F; }
+/* Waveform Analyser */
+[data-brand="waveform-analyser"], .brand-waveform-analyser { --wa-teal: #23707F; }

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 160" width="1000" height="160" role="img" aria-label="Waveform Analyser">
+<g>
+  <g fill="none" stroke="#23707F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    
+    <path d="M14 62 H40 L56 78 H76"/><path d="M14 108 H46 L60 94 H76"/>
+    <circle cx="10" cy="62" r="6"/><circle cx="10" cy="108" r="6"/>
+    
+    <path d="M76 86 L92 50 L116 130 L140 50 L164 130 L188 50"/>
+    
+    <path d="M196 130 L226 50 L256 130"/><path d="M209 100 H243"/>
+    
+    <path d="M240 86 H278 L292 62 H316"/><path d="M240 86 H278 L292 108 H316"/>
+    <circle cx="322" cy="62" r="6"/><circle cx="322" cy="108" r="6"/>
+  </g>
+</g>
+<text x="372" y="108" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="700" font-size="64" letter-spacing="-1" fill="#23707F">Waveform Analyser</text>
+</svg>

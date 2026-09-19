@@ -1,0 +1,1 @@
+Anton, Oswald and Barlow are licensed under the SIL Open Font License 1.1 (OFL). Copies here are the site-served woff2 subsets, mirrored from the vault masters. JetBrains Mono is NOT part of the brand kit: it is the plugin-UI datasheet face only, and ships inside each plugin.
