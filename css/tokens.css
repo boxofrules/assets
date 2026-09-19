@@ -1,4 +1,4 @@
-/* @boxofrules/brand: the design tokens. One source; every site and surface reads these.
+/* @boxofrules/assets: the design tokens. One source; every site and surface reads these.
    Core = Box Of Rules. Products override or extend under their own scope. */
 :root {
   --ink:    #0B0B0C;

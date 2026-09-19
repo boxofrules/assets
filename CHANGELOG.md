@@ -1,4 +1,8 @@
-# @boxofrules/brand changelog
+# @boxofrules/assets changelog
+
+## 1.0.1 (19 Sep 2026)
+
+Renamed from @boxofrules/brand: the repo is boxofrules/assets and the remit widens to every approved asset (plugin imagery next). No file moved.
 
 ## 1.0.0 (19 Sep 2026)
 
