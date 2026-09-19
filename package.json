@@ -1,6 +1,6 @@
 {
   "name": "@boxofrules/assets",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Box Of Rules assets: the brand kit (marks, fonts, tokens) and, next, every approved plugin image, with a manifest that says what each asset is and where it goes. One source for every site, service, plugin doc and agent.",
   "private": true,
   "license": "UNLICENSED",
