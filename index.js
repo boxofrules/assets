@@ -14,13 +14,27 @@ export function mark(product, variantStartsWith) {
   return join(here, m.file);
 }
 
+/** Absolute path of a plugin image, e.g. product('box-of-bass', 'ui.png') for the current release,
+ *  product('box-of-bass', 'og.jpg', '1.2.2') for that release. Throws rather than guess. */
+export function product(slug, file, version = 'latest') {
+  const p = manifest.products?.plugins?.[slug];
+  if (!p) throw new Error(`@boxofrules/assets: no product ${slug}; see manifest.json products`);
+  const v = version === 'latest' ? p.current : version;
+  const files = p.versions[v]?.files;
+  if (!files || !(file in files)) throw new Error(`@boxofrules/assets: ${slug} ${v} has no ${file}; see manifest.json products`);
+  return join(here, version === 'latest' ? p.latest : p.versions[v].dir, file);
+}
+
 /** Every mark the manifest names, with whether the file exists (the package's own check). */
 export function check() {
-  return manifest.marks.flatMap(m => [{ file: m.file, ok: existsSync(join(here, m.file)) }, ...(m.png ? [{ file: m.png, ok: existsSync(join(here, m.png)) }] : [])]);
+  const marks = manifest.marks.flatMap(m => [{ file: m.file, ok: existsSync(join(here, m.file)) }, ...(m.png ? [{ file: m.png, ok: existsSync(join(here, m.png)) }] : [])]);
+  const products = Object.values(manifest.products?.plugins ?? {}).flatMap(p => Object.values(p.versions).flatMap(v => Object.keys(v.files).flatMap(f => [
+    { file: v.dir + f, ok: existsSync(join(here, v.dir, f)) }, { file: p.latest + f, ok: existsSync(join(here, p.latest, f)) }])));
+  return [...marks, ...products];
 }
 
 if (process.argv.includes('--check')) {
   const rows = check(); const bad = rows.filter(r => !r.ok);
-  console.log(`${rows.length - bad.length}/${rows.length} files present (svg + png)`);
+  console.log(`${rows.length - bad.length}/${rows.length} files present (marks + products)`);
   if (bad.length) { bad.forEach(r => console.log('MISSING', r.file)); process.exit(1); }
 }

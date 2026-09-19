@@ -399,5 +399,87 @@
       "site.webmanifest",
       "head.html"
     ]
+  },
+  "products": {
+    "$comment": "Approved product imagery. products/plugins/<slug>/<version>/ is that release's set and never changes; products/plugins/<slug>/latest/ is a copy of the current release and is the folder to link. Use these files, unmodified, for any page, README, listing, post or doc that shows a plugin; never a screenshot of your own, never a crop, never a recolour. Add a version by copying the folder and updating latest.",
+    "plugins": {
+      "box-of-bass": {
+        "name": "Box Of Bass",
+        "site": "https://plugins.boxofrules.com/plugins/box-of-bass",
+        "current": "1.2.2",
+        "latest": "products/plugins/box-of-bass/latest/",
+        "versions": {
+          "1.2.2": {
+            "dir": "products/plugins/box-of-bass/1.2.2/",
+            "files": {
+              "ui.png": "the interface, main view (the hero shot on the plugin page)",
+              "ui.webp": "ui.png as webp",
+              "gallery-simple.png": "SIMPLE view",
+              "gallery-guitar.png": "GUITAR MODE",
+              "gallery-phase.png": "phase view",
+              "icon-1024.png": "the bundle icon, 1024 square (MuseHub product icon, installers)",
+              "anagram.png": "the Darkglass Anagram block",
+              "og.jpg": "og:image 1200x630 for links to the plugin page",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com",
+              "instagram-1080x1350.png": "the release post, Instagram 4:5"
+            }
+          }
+        }
+      },
+      "picking-fingers": {
+        "name": "Picking Fingers",
+        "site": "https://plugins.boxofrules.com/plugins/picking-fingers",
+        "current": "1.1.0",
+        "latest": "products/plugins/picking-fingers/latest/",
+        "versions": {
+          "1.1.0": {
+            "dir": "products/plugins/picking-fingers/1.1.0/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "anagram.png": "the Darkglass Anagram block",
+              "og.jpg": "og:image 1200x630",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com",
+              "instagram-1080x1350.png": "the release post, Instagram 4:5"
+            }
+          }
+        }
+      },
+      "focus": {
+        "name": "Focus",
+        "site": "https://plugins.boxofrules.com/plugins/focus",
+        "current": "1.0.1",
+        "latest": "products/plugins/focus/latest/",
+        "versions": {
+          "1.0.1": {
+            "dir": "products/plugins/focus/1.0.1/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "demo.jpg": "the demo video thumbnail",
+              "og.jpg": "og:image 1200x630",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com",
+              "instagram-1080x1350.png": "the release post, Instagram 4:5"
+            }
+          }
+        }
+      },
+      "br108": {
+        "name": "BR108",
+        "site": "https://plugins.boxofrules.com/plugins/br108",
+        "current": "1.0.0",
+        "latest": "products/plugins/br108/latest/",
+        "versions": {
+          "1.0.0": {
+            "dir": "products/plugins/br108/1.0.0/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "demo.jpg": "the demo video thumbnail",
+              "unlock.jpg": "the unlock tutorial thumbnail",
+              "og.jpg": "og:image 1200x630",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com"
+            }
+          }
+        }
+      }
+    }
   }
 }
