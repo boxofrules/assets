@@ -1,12 +1,11 @@
 {
   "name": "@boxofrules/assets",
-  "version": "1.1.1",
-  "description": "Box Of Rules assets: the brand kit (marks, fonts, tokens) and, next, every approved plugin image, with a manifest that says what each asset is and where it goes. One source for every site, service, plugin doc and agent.",
-  "private": true,
-  "license": "UNLICENSED",
+  "version": "1.2.0",
+  "description": "Box Of Rules brand kit and approved product imagery: marks, fonts, tokens, favicons and every plugin picture by version, with a manifest that says what each asset is and where it goes. One source for every site, doc, listing and agent.",
+  "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/boxofrules/assets.git"
+    "url": "git+https://github.com/boxofrules/assets.git"
   },
   "type": "module",
   "main": "index.js",
@@ -17,19 +16,39 @@
     "./tokens.json": "./tokens.json",
     "./manifest.json": "./manifest.json",
     "./marks/*": "./marks/*",
-    "./fonts/*": "./fonts/*"
+    "./fonts/*": "./fonts/*",
+    "./products/*": "./products/*",
+    "./web/*": "./web/*"
   },
   "files": [
-    "index.js",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md",
     "css",
     "fonts",
-    "marks",
-    "tokens.json",
+    "index.js",
     "manifest.json",
-    "README.md",
-    "CHANGELOG.md"
+    "marks",
+    "products",
+    "tokens.json",
+    "web"
   ],
   "scripts": {
-    "check": "node index.js --check"
-  }
+    "check": "node index.js --check",
+    "web-icons": "python3 tools/web-icons.py",
+    "publish-cdn": "tools/publish-cdn.sh"
+  },
+  "homepage": "https://boxofrules.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "box-of-rules",
+    "brand",
+    "assets",
+    "design-tokens",
+    "fonts",
+    "logos",
+    "plugins"
+  ]
 }

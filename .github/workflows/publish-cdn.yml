@@ -1,0 +1,23 @@
+# On every release tag, publish the package to R2 so cdn.boxofrules.com serves it at
+# /v<tag>/... (immutable, for emails and anything that must never change) and /latest/...
+# Needs the CLOUDFLARE_API_TOKEN secret (an R2-scoped token: Workers R2 Storage: Edit).
+name: Publish to cdn.boxofrules.com
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Upload versioned and latest
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 9fb419b7a206ac59b0b8ae5eb76769da
+        run: tools/publish-cdn.sh "${GITHUB_REF_NAME}"

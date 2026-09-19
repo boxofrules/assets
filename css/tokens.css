@@ -22,6 +22,7 @@
 }
 /* plugins.boxofrules.com (James, 13 Sep 2026): violet is identity and navigation, never a button; amber is every CTA */
 [data-brand="plugins"], .brand-plugins {
+  --font-heading: 'Unbounded', 'Arial Black', sans-serif;   /* the one product on Unbounded (James, 19 Sep 2026) */
   --violet:      #8E5EB0;
   --violet-2:    #9B59B6;
   --violet-deep: #5E3A7A;

@@ -1,152 +1,333 @@
 {
-  "$comment": "Which mark goes where. Vocabulary for every product: full = sign + wordmark, icon = sign alone, logotype = wordmark alone, card = the padded 5:3 version for og/social. Every product icon carries the Box Of Rules sign path from marks/box-of-rules/icon-*.svg, unchanged. If a surface is not listed, ask James; never invent, redraw or recolour a mark.",
+  "$comment": "Which mark goes where. Vocabulary for every product: full = sign + wordmark, icon = sign alone, logotype = wordmark alone, card = the padded 5:3 version for og/social. Every product icon carries the Box Of Rules sign path from marks/box-of-rules/icon-*.svg, unchanged. Every SVG is cropped to its content (no margin, no background); every listed png is the same mark, transparent, 1024 px on the long edge. Cards are the one padded form. If a surface is not listed, ask James; never invent, redraw or recolour a mark.",
   "marks": [
     {
       "file": "marks/box-of-rules/full-blue.svg",
       "product": "box-of-rules",
       "variant": "full, blue",
       "use": "the default Box Of Rules mark on any public Box Of Rules surface: org profile, press, docs, og cards, the music site",
-      "never": "dark backgrounds where blue fails contrast: use full-white"
+      "never": "dark backgrounds where blue fails contrast: use full-white",
+      "png": "marks/box-of-rules/full-blue.png"
     },
     {
       "file": "marks/box-of-rules/full-white.svg",
       "product": "box-of-rules",
       "variant": "full, white",
       "use": "on ink/coal when the blue does not read",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/full-white.png"
     },
     {
       "file": "marks/box-of-rules/full-black.svg",
       "product": "box-of-rules",
       "variant": "full, black",
       "use": "print and light paper only",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/full-black.png"
+    },
+    {
+      "file": "marks/box-of-rules/card-blue.svg",
+      "product": "box-of-rules",
+      "variant": "card, blue, 1000x600: the full logo padded",
+      "use": "og and social cards, store tiles, anything 5:3; headers use full-blue",
+      "never": "",
+      "png": "marks/box-of-rules/card-blue.png"
+    },
+    {
+      "file": "marks/box-of-rules/card-white.svg",
+      "product": "box-of-rules",
+      "variant": "card, white",
+      "use": "as card-blue on ink/coal",
+      "never": "",
+      "png": "marks/box-of-rules/card-white.png"
+    },
+    {
+      "file": "marks/box-of-rules/card-black.svg",
+      "product": "box-of-rules",
+      "variant": "card, black",
+      "use": "print only",
+      "never": "",
+      "png": "marks/box-of-rules/card-black.png"
     },
     {
       "file": "marks/box-of-rules/icon-blue.svg",
       "product": "box-of-rules",
       "variant": "icon, blue",
-      "use": "favicons, app icons, avatars, tight corners; PNG beside it for raster targets. THE sign: every product icon is built from this path",
-      "never": ""
+      "use": "favicons, app icons, avatars, tight corners. THE sign: every product icon is built from this path",
+      "never": "",
+      "png": "marks/box-of-rules/icon-blue.png"
     },
     {
       "file": "marks/box-of-rules/icon-white.svg",
       "product": "box-of-rules",
       "variant": "icon, white",
       "use": "icon on ink/coal",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/icon-white.png"
     },
     {
       "file": "marks/box-of-rules/icon-black.svg",
       "product": "box-of-rules",
       "variant": "icon, black",
       "use": "print only",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/icon-black.png"
     },
     {
       "file": "marks/box-of-rules/logotype-blue.svg",
       "product": "box-of-rules",
       "variant": "logotype, blue",
       "use": "the word-form beside a product full logo (the 'from Box Of Rules' line), headers",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/logotype-blue.png"
     },
     {
       "file": "marks/box-of-rules/logotype-white.svg",
       "product": "box-of-rules",
       "variant": "logotype, white",
       "use": "logotype on ink/coal",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/logotype-white.png"
     },
     {
       "file": "marks/box-of-rules/logotype-black.svg",
       "product": "box-of-rules",
       "variant": "logotype, black",
       "use": "print only",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-rules/logotype-black.png"
+    },
+    {
+      "file": "marks/accounts/full-blue.svg",
+      "product": "accounts",
+      "variant": "full, blue: the Box Of Rules sign + MY BOX OF…",
+      "use": "accounts.boxofrules.com header, account emails, anything that is the account",
+      "never": "on ink/coal where blue fails: full-white",
+      "png": "marks/accounts/full-blue.png"
+    },
+    {
+      "file": "marks/accounts/card-blue.svg",
+      "product": "accounts",
+      "variant": "card, blue, 1000x600",
+      "use": "og and social cards for the hub",
+      "never": "",
+      "png": "marks/accounts/card-blue.png"
+    },
+    {
+      "file": "marks/accounts/icon-blue.svg",
+      "product": "accounts",
+      "variant": "icon, blue: the Box Of Rules sign (the default account icon)",
+      "use": "favicon, avatar, the account chip in every site's header",
+      "never": "",
+      "png": "marks/accounts/icon-blue.png"
+    },
+    {
+      "file": "marks/accounts/logotype-blue.svg",
+      "product": "accounts",
+      "variant": "logotype, blue: MY BOX OF… alone",
+      "use": "beside an icon already placed",
+      "never": "",
+      "png": "marks/accounts/logotype-blue.png"
+    },
+    {
+      "file": "marks/accounts/full-white.svg",
+      "product": "accounts",
+      "variant": "full, white",
+      "use": "on ink/coal",
+      "never": "",
+      "png": "marks/accounts/full-white.png"
+    },
+    {
+      "file": "marks/accounts/card-white.svg",
+      "product": "accounts",
+      "variant": "card, white",
+      "use": "as card-blue on ink/coal",
+      "never": "",
+      "png": "marks/accounts/card-white.png"
+    },
+    {
+      "file": "marks/accounts/icon-white.svg",
+      "product": "accounts",
+      "variant": "icon, white",
+      "use": "on ink/coal",
+      "never": "",
+      "png": "marks/accounts/icon-white.png"
+    },
+    {
+      "file": "marks/accounts/logotype-white.svg",
+      "product": "accounts",
+      "variant": "logotype, white",
+      "use": "on ink/coal",
+      "never": "",
+      "png": "marks/accounts/logotype-white.png"
     },
     {
       "file": "marks/plugins/full.svg",
       "product": "plugins",
-      "variant": "full: sign + PLUGINS",
+      "variant": "full: the sign on the amber wave, PLUGINS over the wave (arranged by James in Figma, 19 Sep 2026)",
       "use": "plugins.boxofrules.com header, the plugins download shelf README, anything that is the plugins store",
-      "never": "as a Box Of Rules mark; it is the store's, not the brand's"
+      "never": "as a Box Of Rules mark; it is the store's, not the brand's",
+      "png": "marks/plugins/full.png"
+    },
+    {
+      "file": "marks/plugins/card.svg",
+      "product": "plugins",
+      "variant": "card, 1000x600: the full logo padded",
+      "use": "og and social cards, store tiles, anything 5:3",
+      "never": "",
+      "png": "marks/plugins/card.png"
     },
     {
       "file": "marks/plugins/icon.svg",
       "product": "plugins",
-      "variant": "icon",
+      "variant": "icon: the sign with the wave in and out (Frame 2, James, 19 Sep 2026)",
       "use": "plugins store favicon and square avatars",
-      "never": ""
+      "never": "",
+      "png": "marks/plugins/icon.png"
+    },
+    {
+      "file": "marks/plugins/logotype.svg",
+      "product": "plugins",
+      "variant": "logotype: PLUGINS over the amber wave, no sign (Group 1, James, 19 Sep 2026)",
+      "use": "beside an icon already placed, or where the sign would repeat",
+      "never": "",
+      "png": "marks/plugins/logotype.png"
     },
     {
       "file": "marks/box-of-synths/full-green.svg",
       "product": "box-of-synths",
       "variant": "full, green #5FD08A: sign in the dot ring, then BOX OF SYNTHS with the keys under it",
       "use": "EVERY Box Of Synths header and horizontal surface: site nav, docs, plugin about panel, email header",
-      "never": "the blue variant, ever (James, Sep 2026)"
+      "never": "the blue variant, ever (James, Sep 2026)",
+      "png": "marks/box-of-synths/full-green.png"
     },
     {
       "file": "marks/box-of-synths/card-green.svg",
       "product": "box-of-synths",
       "variant": "card, green, 1000x600: sign in the ring left, keys + BOX OF SYNTHS right, padded",
       "use": "og and social cards, store tiles, anything 5:3; the site nav uses full-green",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/card-green.png"
     },
     {
       "file": "marks/box-of-synths/icon-green.svg",
       "product": "box-of-synths",
       "variant": "icon, green",
       "use": "favicons, the app icon, avatars, the site footer",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/icon-green.png"
     },
     {
       "file": "marks/box-of-synths/logotype-green.svg",
       "product": "box-of-synths",
       "variant": "logotype, green: BOX OF SYNTHS with the keys under it",
       "use": "beside an icon that is already placed, or where the sign would repeat",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/logotype-green.png"
     },
     {
       "file": "marks/box-of-synths/full-white.svg",
       "product": "box-of-synths",
       "variant": "full, white",
       "use": "on green or busy backgrounds where the green does not read",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/full-white.png"
     },
     {
       "file": "marks/box-of-synths/card-white.svg",
       "product": "box-of-synths",
       "variant": "card, white",
       "use": "as card-green where the green does not read",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/card-white.png"
     },
     {
       "file": "marks/box-of-synths/icon-white.svg",
       "product": "box-of-synths",
       "variant": "icon, white",
       "use": "icon where the green does not read",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/icon-white.png"
     },
     {
       "file": "marks/box-of-synths/logotype-white.svg",
       "product": "box-of-synths",
       "variant": "logotype, white",
       "use": "logotype where the green does not read",
-      "never": ""
+      "never": "",
+      "png": "marks/box-of-synths/logotype-white.png"
     },
     {
       "file": "marks/box-of-synths/icon-blue.svg",
       "product": "box-of-synths",
       "variant": "icon, blue",
       "use": "kept for the record only",
-      "never": "any live surface"
+      "never": "any live surface",
+      "png": "marks/box-of-synths/icon-blue.png"
     },
     {
-      "file": "marks/synth-directory/icon.svg",
+      "file": "marks/synth-directory/full-light.svg",
       "product": "synth-directory",
-      "variant": "icon",
-      "use": "synth.directory favicon and og; the site header uses the Box Of Rules full logo",
-      "never": ""
+      "variant": "full, light: Synth, the fader, Directory (for light grounds: ink S/Synth, slate D/Directory, clay dot)",
+      "use": "synth.directory masthead and any horizontal surface; pick the theme by the ground",
+      "never": "",
+      "png": "marks/synth-directory/full-light.png"
+    },
+    {
+      "file": "marks/synth-directory/card-light.svg",
+      "product": "synth-directory",
+      "variant": "card, light, 1000x600",
+      "use": "og and social cards",
+      "never": "",
+      "png": "marks/synth-directory/card-light.png"
+    },
+    {
+      "file": "marks/synth-directory/icon-light.svg",
+      "product": "synth-directory",
+      "variant": "icon, light: S, the fader, D",
+      "use": "favicon, avatars, tight corners",
+      "never": "",
+      "png": "marks/synth-directory/icon-light.png"
+    },
+    {
+      "file": "marks/synth-directory/logotype-light.svg",
+      "product": "synth-directory",
+      "variant": "logotype, light: same as full (the fader is the wordmark's dot)",
+      "use": "where the full logo is called a logotype",
+      "never": "",
+      "png": "marks/synth-directory/logotype-light.png"
+    },
+    {
+      "file": "marks/synth-directory/full-dark.svg",
+      "product": "synth-directory",
+      "variant": "full, dark: Synth, the fader, Directory (for dark grounds: bone S/Synth, bone-2 D/Directory, light clay dot)",
+      "use": "synth.directory masthead and any horizontal surface; pick the theme by the ground",
+      "never": "",
+      "png": "marks/synth-directory/full-dark.png"
+    },
+    {
+      "file": "marks/synth-directory/card-dark.svg",
+      "product": "synth-directory",
+      "variant": "card, dark, 1000x600",
+      "use": "og and social cards",
+      "never": "",
+      "png": "marks/synth-directory/card-dark.png"
+    },
+    {
+      "file": "marks/synth-directory/icon-dark.svg",
+      "product": "synth-directory",
+      "variant": "icon, dark: S, the fader, D",
+      "use": "favicon, avatars, tight corners",
+      "never": "",
+      "png": "marks/synth-directory/icon-dark.png"
+    },
+    {
+      "file": "marks/synth-directory/logotype-dark.svg",
+      "product": "synth-directory",
+      "variant": "logotype, dark: same as full (the fader is the wordmark's dot)",
+      "use": "where the full logo is called a logotype",
+      "never": "",
+      "png": "marks/synth-directory/logotype-dark.png"
     },
     {
       "file": "marks/waveform-analyser/full.svg",
@@ -162,5 +343,144 @@
       "use": "Waveform Analyser favicon and avatars; the site header uses the Box Of Rules full logo",
       "never": ""
     }
-  ]
+  ],
+  "typography": {
+    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Syne + Barlow.",
+    "box-of-rules": {
+      "heading": "Syne",
+      "body": "Barlow",
+      "wordmark": "BOX OF RULES: the master logotype from the vault, outlined paths (not a live font)"
+    },
+    "accounts": {
+      "heading": "Syne",
+      "body": "Barlow",
+      "wordmark": "MY BOX OF… (with Syne's ellipsis glyph): Syne 700, outlined paths"
+    },
+    "plugins": {
+      "heading": "Unbounded 700 (the ONLY product on Unbounded; James, 19 Sep 2026)",
+      "body": "Barlow",
+      "wordmark": "PLUGINS: Unbounded 700, outlined paths"
+    },
+    "box-of-synths": {
+      "heading": "Syne",
+      "body": "Barlow",
+      "wordmark": "BOX OF SYNTHS: outlined paths from the 2026 logo pass, plus the keys"
+    },
+    "synth-directory": {
+      "heading": "Barlow (this product stays on Barlow for everything; James, 19 Sep 2026)",
+      "body": "Barlow",
+      "wordmark": "Synth (Barlow 700) + the fader as the dot + Directory (Barlow 400), outlined paths; colours from the site's wordmark tokens, light and dark"
+    },
+    "waveform-analyser": {
+      "heading": "Syne",
+      "body": "Barlow",
+      "wordmark": "Waveform Analyser: Archivo 700, outlined paths (legacy face, paths only)"
+    }
+  },
+  "web": {
+    "$comment": "Favicons, app icons, the web manifest and the <head> snippet, generated per product by tools/web-icons.py from the product's icon in marks/. A site copies web/<product>/ into its public/ root as is and pastes head.html into its layout. Never draw a favicon by hand.",
+    "products": {
+      "box-of-rules": "web/box-of-rules/",
+      "accounts": "web/accounts/",
+      "plugins": "web/plugins/",
+      "box-of-synths": "web/box-of-synths/",
+      "synth-directory": "web/synth-directory/",
+      "waveform-analyser": "web/waveform-analyser/"
+    },
+    "files": [
+      "favicon.svg (icon on a white circle)",
+      "favicon.ico (16, 32, 48)",
+      "favicon-16.png",
+      "favicon-32.png",
+      "apple-touch-icon.png (180)",
+      "icon-192.png",
+      "icon-512.png",
+      "icon-maskable-512.png (white square, icon in the 80 percent safe zone)",
+      "site.webmanifest",
+      "head.html"
+    ]
+  },
+  "products": {
+    "$comment": "Approved product imagery. products/plugins/<slug>/<version>/ is that release's set and never changes; products/plugins/<slug>/latest/ is a copy of the current release and is the folder to link. Use these files, unmodified, for any page, README, listing, post or doc that shows a plugin; never a screenshot of your own, never a crop, never a recolour. Add a version by copying the folder and updating latest.",
+    "plugins": {
+      "box-of-bass": {
+        "name": "Box Of Bass",
+        "site": "https://plugins.boxofrules.com/plugins/box-of-bass",
+        "current": "1.2.2",
+        "latest": "products/plugins/box-of-bass/latest/",
+        "versions": {
+          "1.2.2": {
+            "dir": "products/plugins/box-of-bass/1.2.2/",
+            "files": {
+              "ui.png": "the interface, main view (the hero shot on the plugin page)",
+              "ui.webp": "ui.png as webp",
+              "gallery-simple.png": "SIMPLE view",
+              "gallery-guitar.png": "GUITAR MODE",
+              "gallery-phase.png": "phase view",
+              "icon-1024.png": "the bundle icon, 1024 square (MuseHub product icon, installers)",
+              "anagram.png": "the Darkglass Anagram block",
+              "og.jpg": "og:image 1200x630 for links to the plugin page",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com",
+              "instagram-1080x1350.png": "the release post, Instagram 4:5",
+              "demo.jpg": "the walkthrough video thumbnail"
+            }
+          }
+        }
+      },
+      "picking-fingers": {
+        "name": "Picking Fingers",
+        "site": "https://plugins.boxofrules.com/plugins/picking-fingers",
+        "current": "1.1.0",
+        "latest": "products/plugins/picking-fingers/latest/",
+        "versions": {
+          "1.1.0": {
+            "dir": "products/plugins/picking-fingers/1.1.0/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "anagram.png": "the Darkglass Anagram block",
+              "og.jpg": "og:image 1200x630",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com",
+              "instagram-1080x1350.png": "the release post, Instagram 4:5"
+            }
+          }
+        }
+      },
+      "focus": {
+        "name": "Focus",
+        "site": "https://plugins.boxofrules.com/plugins/focus",
+        "current": "1.0.1",
+        "latest": "products/plugins/focus/latest/",
+        "versions": {
+          "1.0.1": {
+            "dir": "products/plugins/focus/1.0.1/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "demo.jpg": "the demo video thumbnail",
+              "og.jpg": "og:image 1200x630",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com",
+              "instagram-1080x1350.png": "the release post, Instagram 4:5"
+            }
+          }
+        }
+      },
+      "br108": {
+        "name": "BR108",
+        "site": "https://plugins.boxofrules.com/plugins/br108",
+        "current": "1.0.0",
+        "latest": "products/plugins/br108/latest/",
+        "versions": {
+          "1.0.0": {
+            "dir": "products/plugins/br108/1.0.0/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "demo.jpg": "the demo video thumbnail",
+              "unlock.jpg": "the unlock tutorial thumbnail",
+              "og.jpg": "og:image 1200x630",
+              "band.jpg": "the home band backdrop on plugins.boxofrules.com"
+            }
+          }
+        }
+      }
+    }
+  }
 }
