@@ -1,6 +1,6 @@
 {
   "name": "@boxofrules/assets",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Box Of Rules brand kit and approved product imagery: marks, fonts, tokens, favicons and every plugin picture by version, with a manifest that says what each asset is and where it goes. One source for every site, doc, listing and agent.",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
@@ -36,7 +36,8 @@
   "scripts": {
     "check": "node index.js --check",
     "web-icons": "python3 tools/web-icons.py",
-    "publish-cdn": "tools/publish-cdn.sh"
+    "publish-cdn": "tools/publish-cdn.sh",
+    "images": "node tools/images.mjs"
   },
   "homepage": "https://boxofrules.com",
   "publishConfig": {
@@ -50,5 +51,8 @@
     "fonts",
     "logos",
     "plugins"
-  ]
+  ],
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
 }
