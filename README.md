@@ -30,7 +30,7 @@ Every approved Box Of Rules asset, and the law for using it. Today: the brand ki
 ## Using it
 
 ```sh
-npm install github:boxofrules/assets#v1.1.0
+npm install github:boxofrules/assets#v1.1.1
 ```
 
 - **Laravel sites:** import `@boxofrules/assets/tokens.css` and `fonts.css` in the site's CSS build, or copy `marks/` and `fonts/` into `public/assets/brand/` at build. `bor/brand` (PHP) becomes a thin wrapper that reads `tokens.json` for the constants it exposes.
