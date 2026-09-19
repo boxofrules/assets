@@ -59,10 +59,18 @@ Every release is at `https://cdn.boxofrules.com/v<version>/...` (immutable, cach
 
 ```
 https://cdn.boxofrules.com/latest/marks/box-of-rules/full-blue.svg
-https://cdn.boxofrules.com/latest/products/plugins/box-of-bass/latest/ui.png
 https://cdn.boxofrules.com/latest/css/tokens.css
 https://cdn.boxofrules.com/latest/manifest.json
 ```
+
+Plugin pictures have their own stable home at the root of the CDN, versioned by the plugin, not by this package:
+
+```
+https://cdn.boxofrules.com/products/plugins/box-of-bass/latest/ui.png     the current release (cached an hour)
+https://cdn.boxofrules.com/products/plugins/box-of-bass/1.2.2/ui.png      that release, never changes
+```
+
+That is the URL for a plugin image anywhere: our own sites, a listing, an email, a review.
 
 CORS allows the Box Of Rules domains, so the fonts load cross-origin on our sites.
 
