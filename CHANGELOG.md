@@ -1,5 +1,12 @@
 # @boxofrules/assets changelog
 
+## 1.4.1 (20 Sep 2026)
+
+- **`fonts/desktop/`**: the same faces as TrueType, for native apps and audio plugins, which cannot load woff2. `Oswald-Variable.ttf` (Google Fonts ships no statics for Oswald), `Barlow-Regular.ttf`, `Barlow-Medium.ttf`. The web woff2 files are unchanged.
+- **`typography.desktop-plugins` in the manifest**: which faces each desktop plugin uses, kept separate from the site keys because several plugins deliberately do NOT use the brand faces. Box Of Bass and Picking Fingers take Oswald + Barlow; **BR108 keeps Futura and the OS monospace** and is exempt (James, 1 Sep: "branded fonts are not going to fit a vintage style - this is a neve style", reconfirmed 20 Sep); **Focus is immutable** (James, 20 Sep) and co-branded. A plugin absent from that list has never had a type pass.
+- **Correction**: `fonts/LICENCE.md` claimed JetBrains Mono was "the plugin-UI datasheet face, shipped inside each plugin". That was never true. No plugin has ever embedded a monospaced font; they all call `juce::Font::getDefaultMonospacedFontName()`, so the face is whatever the OS returns and was never a design decision.
+- **Noted, not shipped**: Futura is proprietary and cannot live in this kit. BR108 on Windows therefore has no Futura and falls back to something arbitrary. An OFL geometric such as Jost* would substitute, but the face is James's call.
+
 ## 1.4.0 (20 Sep 2026)
 
 - **Headings are Oswald, not Syne** (James, 20 Sep: Syne tried on boxofrules.com and the status page, dropped). `--font-heading` is Oswald on every site; plugins stays Unbounded, Synth.Directory stays Barlow. `fonts/oswald-var.woff2` (200 to 700, full build from the Google Fonts source) replaces `syne-var.woff2`. The accounts "MY BOX OF…" wordmark stays as drawn (outlined paths, set in Syne) until it is redrawn.

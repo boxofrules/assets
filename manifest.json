@@ -345,7 +345,7 @@
     }
   ],
   "typography": {
-    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Oswald + Barlow.",
+    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Oswald + Barlow. The keys below are SITES; the desktop audio plugins are under 'desktop-plugins', kept separate because several of them deliberately do NOT use the brand faces and that has to be recorded rather than remembered.",
     "box-of-rules": {
       "heading": "Oswald",
       "body": "Barlow",
@@ -375,6 +375,33 @@
       "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "Waveform Analyser: Archivo 700, outlined paths (legacy face, paths only)"
+    },
+    "desktop-plugins": {
+      "$comment": "Desktop audio plugins, which are NOT the plugins.boxofrules.com site above. They load fonts from fonts/desktop/*.ttf, never the woff2 web files, which JUCE cannot read. A plugin not listed here has never had a type pass: it is running on the operating system's default faces, which is a default, not a decision.",
+      "$default": "Oswald (headings) + Barlow (body), from fonts/desktop/.",
+      "box-of-bass": {
+        "heading": "Oswald",
+        "body": "Barlow",
+        "note": "Brand faces, from 20 Sep 2026. Everything else in this editor still falls back to the OS default monospace and has not had a type pass."
+      },
+      "picking-fingers": {
+        "heading": "Oswald",
+        "body": "Barlow",
+        "wordmark": "Anton, shipped in the plugin at assets/fonts/Anton-Regular.ttf (SIL OFL)",
+        "note": "Brand faces, from 20 Sep 2026, alongside the existing Anton wordmark. The rest of the editor still falls back to the OS default monospace."
+      },
+      "br108": {
+        "heading": "Futura (macOS system font)",
+        "body": "the OS default monospace",
+        "never": "the brand faces. James, 1 Sep 2026: \"branded fonts are not going to fit a vintage style - this is a neve style\". Confirmed again 20 Sep 2026: this plugin keeps its vintage feel and is exempt from Oswald + Barlow.",
+        "licence": "Futura is PROPRIETARY and is not in this kit and cannot be. It ships with macOS under Apple’s licence, so it is available on a Mac and absent on Windows.",
+        "open": "Windows builds have no Futura and will fall back to something arbitrary. That gap is unresolved. An OFL geometric such as Jost* would substitute closely and could live in fonts/desktop/, but picking the face is James’s call, not a default to be applied quietly."
+      },
+      "focus": {
+        "heading": "unchanged",
+        "body": "unchanged",
+        "never": "any type or layout change. James, 20 Sep 2026: \"DON’T TOUCH FOCUS - that’s immutable\". It is co-branded with Goghini, so its look is not ours alone to move."
+      }
     }
   },
   "web": {
