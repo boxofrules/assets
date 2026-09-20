@@ -1,8 +1,13 @@
 # @boxofrules/assets changelog
 
+## 1.6.0 (20 Sep 2026)
+
+- New product category `products/music/<slug>/cover.jpg`: the Box Of Rules band's single artwork, one canonical square cover per release, `.min`/`.webp` siblings generated the same way as plugin pictures. Four releases added: `tax-wealth-not-work` (the artist's 5000x5000 master, matches the site's `twnw-hero.jpg` at higher resolution), `real-fake-paradise` (Elias Kopp ft. Box Of Rules), `regrets-whats-next`, `bulls-on-parade`. Slugs match the `releases` table in website-boxofrules.com. The debut EP *Drums. Vocals. Bass* is not included yet, it has no artwork published on the site. `manifest.json` gains `products.music`; `index.js` gains `musicCover(slug)` and `--check` now covers it too.
+
 ## 1.5.0 (20 Sep 2026)
 
 - **`badges/`: third-party badges, starting with PACE's iLok Enabled set** (USB and Cloud, light and dark, SVG + @2x PNG), so a site can show it beside the AAX line without copying files around. Under PACE's terms, not ours: `badges/LICENCE.md`, a fourth section in `LICENSE.md`, `manifest.badges` with the use and the never, `badge(set, file)` in `index.js`, `--check` covers them, and the CDN publish syncs the folder.
+
 ## 1.4.1 (20 Sep 2026)
 
 - **`fonts/desktop/`**: the same faces as TrueType, for native apps and audio plugins, which cannot load woff2. `Oswald-Variable.ttf` (Google Fonts ships no statics for Oswald), `Barlow-Regular.ttf`, `Barlow-Medium.ttf`. The web woff2 files are unchanged.

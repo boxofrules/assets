@@ -509,6 +509,38 @@
         }
       }
     },
+    "music": {
+      "$comment": "Official cover art for the Box Of Rules band's singles and EPs, one canonical square cover per release, taken from what boxofrules.com serves today (or the artist's full-resolution master where one was supplied and matches). Slugs match the `releases` table (Bor\\Plugins\\Models\\Release) in website-boxofrules.com. Never a crop, a recolour, or a screenshot of a streaming page; add a release by adding its slug here and its cover under products/music/<slug>/.",
+      "tax-wealth-not-work": {
+        "title": "Tax Wealth, Not Work",
+        "type": "single",
+        "release_date": "2026-08-14",
+        "dir": "products/music/tax-wealth-not-work/",
+        "cover": "cover.jpg",
+        "note": "5000x5000 master from the artist (firos_art), matches twnw-hero.jpg on the site at a higher resolution"
+      },
+      "real-fake-paradise": {
+        "title": "Real Fake Paradise",
+        "credit": "Elias Kopp ft. Box Of Rules",
+        "type": "single",
+        "release_date": "2026-07-12",
+        "dir": "products/music/real-fake-paradise/",
+        "cover": "cover.jpg"
+      },
+      "regrets-whats-next": {
+        "title": "Regrets (What's Next?)",
+        "type": "single",
+        "release_date": "2025-09-25",
+        "dir": "products/music/regrets-whats-next/",
+        "cover": "cover.jpg"
+      },
+      "bulls-on-parade": {
+        "title": "Bulls On Parade",
+        "type": "single",
+        "dir": "products/music/bulls-on-parade/",
+        "cover": "cover.jpg"
+      }
+    },
     "$optimised": "Every raster in products/ and marks/ has two generated siblings beside it: <name>.min.<ext> (same format, smaller, no visible loss: PNG lossless, JPEG mozjpeg q90) and <name>.webp (q90). Originals are untouched and are what a version folder guarantees. Web pages use .webp with the .min fallback; link the original when fidelity matters (press, print). Made by `npm run images` (tools/images.mjs, sharp)."
   },
   "badges": {

@@ -25,6 +25,13 @@ export function product(slug, file, version = 'latest') {
   return join(here, version === 'latest' ? p.latest : p.versions[v].dir, file);
 }
 
+/** Absolute path of a music release's cover, e.g. musicCover('tax-wealth-not-work'). Throws rather than guess. */
+export function musicCover(slug) {
+  const r = manifest.products?.music?.[slug];
+  if (!r) throw new Error(`@boxofrules/assets: no music release ${slug}; see manifest.json products.music`);
+  return join(here, r.dir, r.cover);
+}
+
 /** A third-party badge file by set and file name (badges/LICENCE.md says whose and where). */
 export function badge(set, file) {
   const b = manifest.badges?.[set];
@@ -38,7 +45,10 @@ export function check() {
   const badges = Object.entries(manifest.badges ?? {}).filter(([k]) => k !== '$comment').flatMap(([set, b]) => Object.keys(b.files).map(f => ({ file: `badges/${set}/${f}`, ok: existsSync(join(here, 'badges', set, f)) })));
   const products = Object.values(manifest.products?.plugins ?? {}).flatMap(p => Object.values(p.versions).flatMap(v => Object.keys(v.files).flatMap(f => [
     { file: v.dir + f, ok: existsSync(join(here, v.dir, f)) }, { file: p.latest + f, ok: existsSync(join(here, p.latest, f)) }])));
-  return [...marks, ...badges, ...products];
+  const music = Object.values(manifest.products?.music ?? {})
+    .filter(r => r.cover)
+    .map(r => ({ file: r.dir + r.cover, ok: existsSync(join(here, r.dir, r.cover)) }));
+  return [...marks, ...badges, ...products, ...music];
 }
 
 if (process.argv.includes('--check')) {
