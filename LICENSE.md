@@ -1,12 +1,16 @@
 # Licence
 
-This package carries three kinds of file, under three terms.
+This package carries four kinds of file, under four terms.
 
 ## Marks, icons and product imagery (`marks/`, `web/`, `products/`)
 
 Copyright 2026 Box Of Rules (James Gordy). All rights reserved. The Box Of Rules sign, the product logos and every plugin picture are trademarks and copyright works of Box Of Rules.
 
 You may use these files, unmodified, to refer to Box Of Rules and its products: in a review, a listing, a tutorial, a plugin directory, a link preview or documentation. Take the exact file the manifest names for that use. You may not alter, crop, recolour, redraw or combine them with other marks, present them as your own, or use them in a way that suggests Box Of Rules endorses you or your product. Anything else, ask: hello@boxofrules.com.
+
+## Third-party badges (`badges/`)
+
+Not ours and not covered by any licence in this file. The iLok Enabled badges are trademarks of PACE Anti-Piracy, Inc., included under PACE's badge terms for products protected by iLok; `badges/LICENCE.md` names each set, its owner and where it may appear.
 
 ## Fonts (`fonts/`)
 

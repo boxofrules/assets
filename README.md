@@ -20,6 +20,7 @@ marks/<product>/        logos: full, icon, logotype, card, as SVG + transparent 
                         every PNG/JPG here and in products/ also has <name>.min.<ext> and <name>.webp beside it
 products/plugins/<slug>/<version>/   that release's pictures, never changed once published
 products/plugins/<slug>/latest/      a copy of the current release: the folder to link
+badges/<owner>/         third-party badges (iLok Enabled), each under its owner's terms: badges/LICENCE.md
 fonts/                  Oswald (variable, 200 to 700), Barlow 400 to 700, Unbounded 700, as woff2, with their OFL texts
 css/tokens.css          colours, type and per-product scopes as CSS custom properties
 css/fonts.css           the @font-face rules for fonts/
@@ -107,4 +108,4 @@ Adding a plugin release: copy the previous version folder to `products/plugins/<
 
 ## Licence
 
-Marks, icons and plugin imagery: all rights reserved, usable unmodified to refer to Box Of Rules and its products. Fonts: OFL. Tokens, stylesheets and code: MIT. Detail in `LICENSE.md`.
+Marks, icons and plugin imagery: all rights reserved, usable unmodified to refer to Box Of Rules and its products. Third-party badges (`badges/`): their owners' terms, see `badges/LICENCE.md`. Fonts: OFL. Tokens, stylesheets and code: MIT. Detail in `LICENSE.md`.

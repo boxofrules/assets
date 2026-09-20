@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.5.0 (20 Sep 2026)
+
+- **`badges/`: third-party badges, starting with PACE's iLok Enabled set** (USB and Cloud, light and dark, SVG + @2x PNG), so a site can show it beside the AAX line without copying files around. Under PACE's terms, not ours: `badges/LICENCE.md`, a fourth section in `LICENSE.md`, `manifest.badges` with the use and the never, `badge(set, file)` in `index.js`, `--check` covers them, and the CDN publish syncs the folder.
+
 ## 1.4.0 (20 Sep 2026)
 
 - **Headings are Oswald, not Syne** (James, 20 Sep: Syne tried on boxofrules.com and the status page, dropped). `--font-heading` is Oswald on every site; plugins stays Unbounded, Synth.Directory stays Barlow. `fonts/oswald-var.woff2` (200 to 700, full build from the Google Fonts source) replaces `syne-var.woff2`. The accounts "MY BOX OF…" wordmark stays as drawn (outlined paths, set in Syne) until it is redrawn.

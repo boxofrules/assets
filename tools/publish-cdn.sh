@@ -16,7 +16,7 @@ export RCLONE_CONFIG_R2_TYPE=s3 RCLONE_CONFIG_R2_PROVIDER=Cloudflare RCLONE_CONF
        RCLONE_CONFIG_R2_ENDPOINT="https://9fb419b7a206ac59b0b8ae5eb76769da.r2.cloudflarestorage.com" \
        RCLONE_CONFIG_R2_NO_CHECK_BUCKET=true RCLONE_CONFIG_R2_REGION=auto
 YEAR="public, max-age=31536000, immutable"; HOUR="public, max-age=3600"
-FILTER=(--filter '+ /css/**' --filter '+ /fonts/**' --filter '+ /marks/**' --filter '+ /web/**' --filter '+ /products/**' \
+FILTER=(--filter '+ /css/**' --filter '+ /fonts/**' --filter '+ /marks/**' --filter '+ /badges/**' --filter '+ /web/**' --filter '+ /products/**' \
         --filter '+ /tokens.json' --filter '+ /manifest.json' --filter '+ /index.js' --filter '+ /README.md' --filter '+ /CHANGELOG.md' --filter '+ /LICENSE.md' --filter '- **')
 sync() { rclone sync . "r2:bor-assets/$1" "${FILTER[@]}" --checksum --transfers 32 --fast-list --header-upload "Cache-Control: $2" -q; }
 [ "$tag" != "latest" ] && sync "$tag" "$YEAR"
