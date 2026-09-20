@@ -345,14 +345,14 @@
     }
   ],
   "typography": {
-    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Syne + Barlow.",
+    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Oswald + Barlow. The keys below are SITES; the desktop audio plugins are under 'desktop-plugins', kept separate because several of them deliberately do NOT use the brand faces and that has to be recorded rather than remembered.",
     "box-of-rules": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "BOX OF RULES: the master logotype from the vault, outlined paths (not a live font)"
     },
     "accounts": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "MY BOX OF… (with Syne's ellipsis glyph): Syne 700, outlined paths"
     },
@@ -362,7 +362,7 @@
       "wordmark": "PLUGINS: Unbounded 700, outlined paths"
     },
     "box-of-synths": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "BOX OF SYNTHS: outlined paths from the 2026 logo pass, plus the keys"
     },
@@ -372,9 +372,36 @@
       "wordmark": "Synth (Barlow 700) + the fader as the dot + Directory (Barlow 400), outlined paths; colours from the site's wordmark tokens, light and dark"
     },
     "waveform-analyser": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "Waveform Analyser: Archivo 700, outlined paths (legacy face, paths only)"
+    },
+    "desktop-plugins": {
+      "$comment": "Desktop audio plugins, which are NOT the plugins.boxofrules.com site above. They load fonts from fonts/desktop/*.ttf, never the woff2 web files, which JUCE cannot read. A plugin not listed here has never had a type pass: it is running on the operating system's default faces, which is a default, not a decision.",
+      "$default": "Oswald (headings) + Barlow (body), from fonts/desktop/.",
+      "box-of-bass": {
+        "heading": "Oswald",
+        "body": "Barlow",
+        "note": "Brand faces, from 20 Sep 2026. Everything else in this editor still falls back to the OS default monospace and has not had a type pass."
+      },
+      "picking-fingers": {
+        "heading": "Oswald",
+        "body": "Barlow",
+        "wordmark": "Anton, shipped in the plugin at assets/fonts/Anton-Regular.ttf (SIL OFL)",
+        "note": "Brand faces, from 20 Sep 2026, alongside the existing Anton wordmark. The rest of the editor still falls back to the OS default monospace."
+      },
+      "br108": {
+        "heading": "Futura (macOS system font)",
+        "body": "the OS default monospace",
+        "never": "the brand faces. James, 1 Sep 2026: \"branded fonts are not going to fit a vintage style - this is a neve style\". Confirmed again 20 Sep 2026: this plugin keeps its vintage feel and is exempt from Oswald + Barlow.",
+        "licence": "Futura is PROPRIETARY and is not in this kit and cannot be. It ships with macOS under Apple’s licence, so it is available on a Mac and absent on Windows.",
+        "open": "Windows builds have no Futura and will fall back to something arbitrary. That gap is unresolved. An OFL geometric such as Jost* would substitute closely and could live in fonts/desktop/, but picking the face is James’s call, not a default to be applied quietly."
+      },
+      "focus": {
+        "heading": "unchanged",
+        "body": "unchanged",
+        "never": "any type or layout change. James, 20 Sep 2026: \"DON’T TOUCH FOCUS - that’s immutable\". It is co-branded with Goghini, so its look is not ours alone to move."
+      }
     }
   },
   "web": {
@@ -515,5 +542,21 @@
       }
     },
     "$optimised": "Every raster in products/ and marks/ has two generated siblings beside it: <name>.min.<ext> (same format, smaller, no visible loss: PNG lossless, JPEG mozjpeg q90) and <name>.webp (q90). Originals are untouched and are what a version folder guarantees. Web pages use .webp with the .min fallback; link the original when fidelity matters (press, print). Made by `npm run images` (tools/images.mjs, sharp)."
+  },
+  "badges": {
+    "$comment": "Third-party badges, each under its owner's terms (badges/LICENCE.md). Not Box Of Rules marks: never recolour, never combine with ours, never on a product that does not carry the technology.",
+    "ilok": {
+      "owner": "PACE Anti-Piracy, Inc.",
+      "use": "beside the AAX / Pro Tools line on a plugin page or store listing, only for a plugin whose AAX is PACE-signed (Box Of Bass 1.2.1+, BR108); the site's dark pages take the -dark files, light pages the -light ones",
+      "never": "on pages about plugins that ship without an iLok-protected AAX; never resized below PACE's minimum or recoloured",
+      "files": {
+        "iLok-enabled-usb-dark.svg": "USB badge, dark background",
+        "iLok-enabled-usb-dark@2x.png": "USB badge, dark background, raster @2x",
+        "iLok-enabled-USB-light.svg": "USB badge, light background",
+        "iLok-enabled-Cloud-USB-dark.svg": "USB + Cloud badge, dark background",
+        "iLok-enabled-Cloud-USB-dark@2x.png": "USB + Cloud badge, dark background, raster @2x",
+        "iLok-enabled-Cloud-USB-light.svg": "USB + Cloud badge, light background"
+      }
+    }
   }
 }

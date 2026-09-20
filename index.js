@@ -32,19 +32,27 @@ export function musicCover(slug) {
   return join(here, r.dir, r.cover);
 }
 
+/** A third-party badge file by set and file name (badges/LICENCE.md says whose and where). */
+export function badge(set, file) {
+  const b = manifest.badges?.[set];
+  if (!b || !b.files[file]) throw new Error(`no badge ${set}/${file}`);
+  return `badges/${set}/${file}`;
+}
+
 /** Every mark the manifest names, with whether the file exists (the package's own check). */
 export function check() {
   const marks = manifest.marks.flatMap(m => [{ file: m.file, ok: existsSync(join(here, m.file)) }, ...(m.png ? [{ file: m.png, ok: existsSync(join(here, m.png)) }] : [])]);
+  const badges = Object.entries(manifest.badges ?? {}).filter(([k]) => k !== '$comment').flatMap(([set, b]) => Object.keys(b.files).map(f => ({ file: `badges/${set}/${f}`, ok: existsSync(join(here, 'badges', set, f)) })));
   const products = Object.values(manifest.products?.plugins ?? {}).flatMap(p => Object.values(p.versions).flatMap(v => Object.keys(v.files).flatMap(f => [
     { file: v.dir + f, ok: existsSync(join(here, v.dir, f)) }, { file: p.latest + f, ok: existsSync(join(here, p.latest, f)) }])));
   const music = Object.values(manifest.products?.music ?? {})
     .filter(r => r.cover)
     .map(r => ({ file: r.dir + r.cover, ok: existsSync(join(here, r.dir, r.cover)) }));
-  return [...marks, ...products, ...music];
+  return [...marks, ...badges, ...products, ...music];
 }
 
 if (process.argv.includes('--check')) {
   const rows = check(); const bad = rows.filter(r => !r.ok);
-  console.log(`${rows.length - bad.length}/${rows.length} files present (marks + products)`);
+  console.log(`${rows.length - bad.length}/${rows.length} files present (marks + badges + products)`);
   if (bad.length) { bad.forEach(r => console.log('MISSING', r.file)); process.exit(1); }
 }

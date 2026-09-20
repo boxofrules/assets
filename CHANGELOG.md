@@ -1,8 +1,23 @@
 # @boxofrules/assets changelog
 
-## 1.4.0 (20 Sep 2026)
+## 1.6.0 (20 Sep 2026)
 
 - New product category `products/music/<slug>/cover.jpg`: the Box Of Rules band's single artwork, one canonical square cover per release, `.min`/`.webp` siblings generated the same way as plugin pictures. Four releases added: `tax-wealth-not-work` (the artist's 5000x5000 master, matches the site's `twnw-hero.jpg` at higher resolution), `real-fake-paradise` (Elias Kopp ft. Box Of Rules), `regrets-whats-next`, `bulls-on-parade`. Slugs match the `releases` table in website-boxofrules.com. The debut EP *Drums. Vocals. Bass* is not included yet, it has no artwork published on the site. `manifest.json` gains `products.music`; `index.js` gains `musicCover(slug)` and `--check` now covers it too.
+
+## 1.5.0 (20 Sep 2026)
+
+- **`badges/`: third-party badges, starting with PACE's iLok Enabled set** (USB and Cloud, light and dark, SVG + @2x PNG), so a site can show it beside the AAX line without copying files around. Under PACE's terms, not ours: `badges/LICENCE.md`, a fourth section in `LICENSE.md`, `manifest.badges` with the use and the never, `badge(set, file)` in `index.js`, `--check` covers them, and the CDN publish syncs the folder.
+
+## 1.4.1 (20 Sep 2026)
+
+- **`fonts/desktop/`**: the same faces as TrueType, for native apps and audio plugins, which cannot load woff2. `Oswald-Variable.ttf` (Google Fonts ships no statics for Oswald), `Barlow-Regular.ttf`, `Barlow-Medium.ttf`. The web woff2 files are unchanged.
+- **`typography.desktop-plugins` in the manifest**: which faces each desktop plugin uses, kept separate from the site keys because several plugins deliberately do NOT use the brand faces. Box Of Bass and Picking Fingers take Oswald + Barlow; **BR108 keeps Futura and the OS monospace** and is exempt (James, 1 Sep: "branded fonts are not going to fit a vintage style - this is a neve style", reconfirmed 20 Sep); **Focus is immutable** (James, 20 Sep) and co-branded. A plugin absent from that list has never had a type pass.
+- **Correction**: `fonts/LICENCE.md` claimed JetBrains Mono was "the plugin-UI datasheet face, shipped inside each plugin". That was never true. No plugin has ever embedded a monospaced font; they all call `juce::Font::getDefaultMonospacedFontName()`, so the face is whatever the OS returns and was never a design decision.
+- **Noted, not shipped**: Futura is proprietary and cannot live in this kit. BR108 on Windows therefore has no Futura and falls back to something arbitrary. An OFL geometric such as Jost* would substitute, but the face is James's call.
+
+## 1.4.0 (20 Sep 2026)
+
+- **Headings are Oswald, not Syne** (James, 20 Sep: Syne tried on boxofrules.com and the status page, dropped). `--font-heading` is Oswald on every site; plugins stays Unbounded, Synth.Directory stays Barlow. `fonts/oswald-var.woff2` (200 to 700, full build from the Google Fonts source) replaces `syne-var.woff2`. The accounts "MY BOX OF…" wordmark stays as drawn (outlined paths, set in Syne) until it is redrawn.
 
 ## 1.3.1 (19 Sep 2026)
 
