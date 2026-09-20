@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.4.0 (20 Sep 2026)
+
+- **Headings are Oswald, not Syne** (James, 20 Sep: Syne tried on boxofrules.com and the status page, dropped). `--font-heading` is Oswald on every site; plugins stays Unbounded, Synth.Directory stays Barlow. `fonts/oswald-var.woff2` (200 to 700, full build from the Google Fonts source) replaces `syne-var.woff2`. The accounts "MY BOX OF…" wordmark stays as drawn (outlined paths, set in Syne) until it is redrawn.
+
 ## 1.3.1 (19 Sep 2026)
 
 - Repo housekeeping: `actions/checkout@v5` (Node 24), Dependabot monthly grouped for npm and Actions, CODEOWNERS. No asset changed.
