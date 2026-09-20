@@ -345,14 +345,14 @@
     }
   ],
   "typography": {
-    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Syne + Barlow.",
+    "$comment": "Which face each product uses, for headings, for body, and inside its wordmark. If it is not here, it is Oswald + Barlow.",
     "box-of-rules": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "BOX OF RULES: the master logotype from the vault, outlined paths (not a live font)"
     },
     "accounts": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "MY BOX OF… (with Syne's ellipsis glyph): Syne 700, outlined paths"
     },
@@ -362,7 +362,7 @@
       "wordmark": "PLUGINS: Unbounded 700, outlined paths"
     },
     "box-of-synths": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "BOX OF SYNTHS: outlined paths from the 2026 logo pass, plus the keys"
     },
@@ -372,7 +372,7 @@
       "wordmark": "Synth (Barlow 700) + the fader as the dot + Directory (Barlow 400), outlined paths; colours from the site's wordmark tokens, light and dark"
     },
     "waveform-analyser": {
-      "heading": "Syne",
+      "heading": "Oswald",
       "body": "Barlow",
       "wordmark": "Waveform Analyser: Archivo 700, outlined paths (legacy face, paths only)"
     }

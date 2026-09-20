@@ -20,7 +20,7 @@ marks/<product>/        logos: full, icon, logotype, card, as SVG + transparent 
                         every PNG/JPG here and in products/ also has <name>.min.<ext> and <name>.webp beside it
 products/plugins/<slug>/<version>/   that release's pictures, never changed once published
 products/plugins/<slug>/latest/      a copy of the current release: the folder to link
-fonts/                  Syne (variable), Barlow 400 to 700, Unbounded 700, as woff2, with their OFL texts
+fonts/                  Oswald (variable, 200 to 700), Barlow 400 to 700, Unbounded 700, as woff2, with their OFL texts
 css/tokens.css          colours, type and per-product scopes as CSS custom properties
 css/fonts.css           the @font-face rules for fonts/
 tokens.json             the same tokens for scripts, og-card builders and docs
@@ -47,7 +47,7 @@ index.js                tokens, manifest, mark() and product() resolvers, --chec
 1. **Box Of Rules blue leads every public Box Of Rules visual.** Amber is the accent. `marks/box-of-rules/full-blue.svg` is the default mark; white on ink or coal only when blue fails contrast; black for print.
 2. **One sign.** Every product icon carries the Box Of Rules sign, the exact path from `marks/box-of-rules/icon-*.svg`, never a redraw. Products differ by colour and by what sits around the sign: plugins puts it on the amber waveform in violet; Box Of Synths in a ring of dots in moss green `#5FD08A`, never blue; Synth.Directory and Waveform Analyser have their own icons and use the Box Of Rules full logo in their headers.
 3. **Plugin pictures come from `products/`.** Link `latest/` unless you are documenting a specific release; then link that version's folder, which never changes. No screenshots of your own. On a web page use the `.webp` with the `.min` as fallback; the original is for print and press.
-4. **Fonts:** Syne for headings, Barlow for everything else, on every site. Two exceptions: plugins.boxofrules.com headings are Unbounded, and synth.directory is Barlow throughout. The manifest's `typography` section states each product's faces. Anton and Oswald are retired.
+4. **Fonts:** Oswald for headings, Barlow for everything else, on every site (Syne was tried on 19 Sep and dropped on 20 Sep). Two exceptions: plugins.boxofrules.com headings are Unbounded, and synth.directory is Barlow throughout. The manifest's `typography` section states each product's faces. Anton is retired.
 5. **Name and tagline:** "Box Of Rules", capital O, always. Tagline "Digitally Analogue". No em dashes in public copy.
 6. **Favicons are generated, never drawn**: `web/<product>/` comes from the product's icon via `tools/web-icons.py`.
 7. **Masters live with James.** This package is the distributable copy; a change to a master is a version bump here, never an edit in a site.

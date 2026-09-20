@@ -14,7 +14,7 @@
   --cyan:   #5FB4C4;   /* status: info; the parent-brand blue inside product palettes */
   --blood:  #C42424;   /* status: errors, destructive */
   --green:  #6FBF73;   /* status: success, activated */
-  --font-heading: 'Syne', system-ui, sans-serif;          /* every heading, every site (James, 19 Sep 2026) */
+  --font-heading: 'Oswald', 'Arial Narrow', sans-serif;  /* every heading, every site: Oswald (James, 20 Sep 2026; Syne tried and dropped) */
   --font-body:    'Barlow', system-ui, sans-serif;        /* everything else: body, labels, buttons, tables */
   --font-display: var(--font-heading);                    /* legacy alias for sites still on --font-display */
   --maxw: 1240px;
