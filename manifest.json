@@ -510,5 +510,21 @@
       }
     },
     "$optimised": "Every raster in products/ and marks/ has two generated siblings beside it: <name>.min.<ext> (same format, smaller, no visible loss: PNG lossless, JPEG mozjpeg q90) and <name>.webp (q90). Originals are untouched and are what a version folder guarantees. Web pages use .webp with the .min fallback; link the original when fidelity matters (press, print). Made by `npm run images` (tools/images.mjs, sharp)."
+  },
+  "badges": {
+    "$comment": "Third-party badges, each under its owner's terms (badges/LICENCE.md). Not Box Of Rules marks: never recolour, never combine with ours, never on a product that does not carry the technology.",
+    "ilok": {
+      "owner": "PACE Anti-Piracy, Inc.",
+      "use": "beside the AAX / Pro Tools line on a plugin page or store listing, only for a plugin whose AAX is PACE-signed (Box Of Bass 1.2.1+, BR108); the site's dark pages take the -dark files, light pages the -light ones",
+      "never": "on pages about plugins that ship without an iLok-protected AAX; never resized below PACE's minimum or recoloured",
+      "files": {
+        "iLok-enabled-usb-dark.svg": "USB badge, dark background",
+        "iLok-enabled-usb-dark@2x.png": "USB badge, dark background, raster @2x",
+        "iLok-enabled-USB-light.svg": "USB badge, light background",
+        "iLok-enabled-Cloud-USB-dark.svg": "USB + Cloud badge, dark background",
+        "iLok-enabled-Cloud-USB-dark@2x.png": "USB + Cloud badge, dark background, raster @2x",
+        "iLok-enabled-Cloud-USB-light.svg": "USB + Cloud badge, light background"
+      }
+    }
   }
 }

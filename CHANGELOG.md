@@ -1,5 +1,8 @@
 # @boxofrules/assets changelog
 
+## 1.5.0 (20 Sep 2026)
+
+- **`badges/`: third-party badges, starting with PACE's iLok Enabled set** (USB and Cloud, light and dark, SVG + @2x PNG), so a site can show it beside the AAX line without copying files around. Under PACE's terms, not ours: `badges/LICENCE.md`, a fourth section in `LICENSE.md`, `manifest.badges` with the use and the never, `badge(set, file)` in `index.js`, `--check` covers them, and the CDN publish syncs the folder.
 ## 1.4.1 (20 Sep 2026)
 
 - **`fonts/desktop/`**: the same faces as TrueType, for native apps and audio plugins, which cannot load woff2. `Oswald-Variable.ttf` (Google Fonts ships no statics for Oswald), `Barlow-Regular.ttf`, `Barlow-Medium.ttf`. The web woff2 files are unchanged.
