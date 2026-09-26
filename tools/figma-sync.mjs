@@ -161,7 +161,7 @@ const vars = new Map((await figma.variables.getLocalVariablesAsync()).filter(v =
 const p = await page('Colours');
 const at = takePlace(p, 'Colours', () => 0);
 const f = figma.createAutoLayout('VERTICAL', { name: 'Colours', itemSpacing: 48, paddingTop: 64, paddingBottom: 64, paddingLeft: 64, paddingRight: 64 });
-f.fills = solid('#ECE6D8'); f.x = at.x; f.y = at.y;
+f.fills = solid('#FFFFFF'); // white, so bone and the inks all read without an outline f.x = at.x; f.y = at.y;
 f.appendChild(text('Colours', { size: 48, font: ['Oswald', 'SemiBold'], upper: true }));
 f.appendChild(text('Every swatch is bound to its variable in the Box Of Rules collection. Source: css/tokens.css.', { size: 16, colour: '#131210', width: 900 }));
 for (const g of groups) {
@@ -175,7 +175,6 @@ for (const g of groups) {
     const chip = figma.createRectangle(); chip.resize(200, 120); chip.cornerRadius = 8; chip.name = 'swatch';
     const v = vars.get(t.group + '/' + t.name);
     chip.fills = [figma.variables.setBoundVariableForPaint({ type: 'SOLID', color: hex(t.hex) }, 'color', v)];
-    chip.strokes = solid('#0B0B0C'); chip.strokeWeight = 1; chip.strokeAlign = 'INSIDE'; chip.opacity = 1;
     card.appendChild(chip);
     card.appendChild(text(t.name + (t.alias ? ' = ' + t.alias : ''), { size: 16, font: ['Barlow', 'Medium'] }));
     card.appendChild(text(t.hex.toUpperCase() + '   ' + t.css, { size: 13, colour: '#131210' }));
@@ -190,7 +189,7 @@ return { page: p.id, frame: f.id, groups: groups.length, swatches: groups.reduce
 function typographyScript() {
   const typo = manifest.typography;
   const sites = Object.entries(typo).filter(([k]) => !k.startsWith('$') && k !== 'desktop-plugins').map(([k, v]) => [k, v.heading, v.body, v.wordmark]);
-  const plugins = Object.entries(typo['desktop-plugins'] ?? {}).filter(([k]) => !k.startsWith('$')).map(([k, v]) => [k, typeof v === 'string' ? v : [v.heading, v.body, v.note ?? v.never ?? ''].filter(Boolean).join(' / ')]);
+  const plugins = Object.entries(typo['desktop-plugins'] ?? {}).filter(([k]) => !k.startsWith('$')).map(([k, v]) => [k, v.heading, v.body, v.note ?? (v.never ? 'Never: ' + v.never : '')]);
   return header + lib + `
 await figma.loadFontAsync({ family: 'Unbounded', style: 'Bold' });
 const p = await page('Typography');
@@ -222,7 +221,7 @@ const table = (title, rows) => {
   }
 };
 table('Sites: heading, body, wordmark', ${JSON.stringify(sites)});
-table('Desktop plugins', ${JSON.stringify(plugins)});
+table('Desktop plugins: heading, body, note', ${JSON.stringify(plugins)});
 return { page: p.id, frame: f.id };
 `;
 }
