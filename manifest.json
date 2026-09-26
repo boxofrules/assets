@@ -393,7 +393,7 @@
       "br108": {
         "heading": "Futura (macOS system font)",
         "body": "the OS default monospace",
-        "never": "the brand faces. James, 1 Sep 2026: \"branded fonts are not going to fit a vintage style - this is a neve style\". Confirmed again 20 Sep 2026: this plugin keeps its vintage feel and is exempt from Oswald + Barlow.",
+        "never": "the brand faces. It is a vintage console design and branded fonts do not fit it (James, 1 Sep 2026, confirmed again 20 Sep 2026): this plugin keeps its vintage feel and is exempt from Oswald + Barlow.",
         "licence": "Futura is PROPRIETARY and is not in this kit and cannot be. It ships with macOS under Apple’s licence, so it is available on a Mac and absent on Windows.",
         "open": "Windows builds have no Futura and will fall back to something arbitrary. That gap is unresolved. An OFL geometric such as Jost* would substitute closely and could live in fonts/desktop/, but picking the face is James’s call, not a default to be applied quietly."
       },
