@@ -12,11 +12,11 @@
   "variables": "collection 'Box Of Rules', one mode; names <group>/<css name without -->, code syntax var(--name)",
   "synced": {
     "version": "1.6.0",
-    "commit": "55efa44",
+    "commit": "d3be5e8",
     "date": "2026-09-26",
     "sources": {
       "css/tokens.css": "59bf153d684644a4",
-      "manifest.json": "656d81df30163d61",
+      "manifest.json": "7c1286d1b7d37c30",
       "marks/box-of-rules/full-blue.svg": "559c96ef2f71a994",
       "marks/box-of-rules/full-white.svg": "da2fcfff4065e0d2",
       "marks/box-of-rules/full-black.svg": "d57e8f3845f9a7fe",
