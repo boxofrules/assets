@@ -1,0 +1,8 @@
+{
+  "$comment": "The Figma mirror of this package: same marks, colours and type, rebuilt from the repo by tools/figma-sync.mjs. The repo is the source. 'synced' is what the Figma file last received; `node tools/figma-sync.mjs check` says whether it is behind.",
+  "file": "Assets",
+  "fileKey": "E0FMgNIR0QTJUvx52pKYtS",
+  "url": "https://www.figma.com/design/E0FMgNIR0QTJUvx52pKYtS/Assets",
+  "pages": ["Read me", "Colours", "Typography", "Marks"],
+  "variables": "collection 'Box Of Rules', one mode; names <group>/<css name without -->, code syntax var(--name)"
+}

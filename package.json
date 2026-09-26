@@ -37,7 +37,8 @@
     "check": "node index.js --check",
     "web-icons": "python3 tools/web-icons.py",
     "publish-cdn": "tools/publish-cdn.sh",
-    "images": "node tools/images.mjs"
+    "images": "node tools/images.mjs",
+    "figma": "node tools/figma-sync.mjs"
   },
   "homepage": "https://boxofrules.com",
   "publishConfig": {

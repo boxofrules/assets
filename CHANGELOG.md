@@ -1,5 +1,10 @@
 # @boxofrules/assets changelog
 
+## Unreleased
+
+- **The Figma mirror.** The Figma file [Assets](https://www.figma.com/design/E0FMgNIR0QTJUvx52pKYtS/Assets) carries the kit as a second access point: `css/tokens.css` as 27 variables in a *Box Of Rules* collection (colours, font families, max width; aliases kept, CSS names as code syntax, the stylesheet's comments as descriptions), a Typography page from the manifest, and all 43 marks as editable vectors, one frame per product, each card named by its repo path with its use and never. `tools/figma-sync.mjs` builds it (`build`, `upload`, `record`, `check`); `figma.json` records the file and what it last received. The repo stays the source.
+- **`tokens.json` fonts corrected**: it still said Syne headings with Oswald retired, three versions after 1.4.0 made Oswald the heading face. Now Oswald + Barlow, Unbounded for plugins, Barlow throughout for Synth.Directory, Anton and Syne retired, matching `css/tokens.css` and the manifest.
+
 ## 1.6.0 (20 Sep 2026)
 
 - New product category `products/music/<slug>/cover.jpg`: the Box Of Rules band's single artwork, one canonical square cover per release, `.min`/`.webp` siblings generated the same way as plugin pictures. Four releases added: `tax-wealth-not-work` (the artist's 5000x5000 master, matches the site's `twnw-hero.jpg` at higher resolution), `real-fake-paradise` (Elias Kopp ft. Box Of Rules), `regrets-whats-next`, `bulls-on-parade`. Slugs match the `releases` table in website-boxofrules.com. The debut EP *Drums. Vocals. Bass* is not included yet, it has no artwork published on the site. `manifest.json` gains `products.music`; `index.js` gains `musicCover(slug)` and `--check` now covers it too.
