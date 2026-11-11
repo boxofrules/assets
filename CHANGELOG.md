@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.7.0 (11 Nov 2026)
+
+- **Memo Upscale 1.0.0**: `products/plugins/memo-upscale/1.0.0/` (and `latest/`) with `ui.png` (the interface, the hero shot on the plugin page), `og.jpg` (1200x630) and `icon-1024.png`, each with its `.min` and `.webp` siblings. A new plugin in the manifest, so a minor.
+
 ## 1.6.1 (11 Nov 2026)
 
 - **BR108 is on the Darkglass Anagram marketplace**: `products/plugins/br108/1.0.0/anagram.png` (and `latest/`), the block's store picture at 600 square with its `.min` and `.webp` siblings, the same slot Box of Bass and Picking Fingers already fill. Made from `images/store/BR108-block-800.png` in the block's own repo.
