@@ -500,6 +500,7 @@
             "dir": "products/plugins/br108/1.0.0/",
             "files": {
               "ui.png": "the interface (the hero shot on the plugin page)",
+              "anagram.png": "the Darkglass Anagram block",
               "demo.jpg": "the demo video thumbnail",
               "unlock.jpg": "the unlock tutorial thumbnail",
               "og.jpg": "og:image 1200x630",

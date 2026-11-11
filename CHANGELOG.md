@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.6.1 (11 Nov 2026)
+
+- **BR108 is on the Darkglass Anagram marketplace**: `products/plugins/br108/1.0.0/anagram.png` (and `latest/`), the block's store picture at 600 square with its `.min` and `.webp` siblings, the same slot Box of Bass and Picking Fingers already fill. Made from `images/store/BR108-block-800.png` in the block's own repo.
+
 ## 1.6.0 (20 Sep 2026)
 
 - New product category `products/music/<slug>/cover.jpg`: the Box Of Rules band's single artwork, one canonical square cover per release, `.min`/`.webp` siblings generated the same way as plugin pictures. Four releases added: `tax-wealth-not-work` (the artist's 5000x5000 master, matches the site's `twnw-hero.jpg` at higher resolution), `real-fake-paradise` (Elias Kopp ft. Box Of Rules), `regrets-whats-next`, `bulls-on-parade`. Slugs match the `releases` table in website-boxofrules.com. The debut EP *Drums. Vocals. Bass* is not included yet, it has no artwork published on the site. `manifest.json` gains `products.music`; `index.js` gains `musicCover(slug)` and `--check` now covers it too.
