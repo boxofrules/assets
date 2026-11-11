@@ -508,6 +508,22 @@
             }
           }
         }
+      },
+      "memo-upscale": {
+        "name": "Memo Upscale",
+        "site": "https://plugins.boxofrules.com/plugins/memo-upscale",
+        "current": "1.0.0",
+        "latest": "products/plugins/memo-upscale/latest/",
+        "versions": {
+          "1.0.0": {
+            "dir": "products/plugins/memo-upscale/1.0.0/",
+            "files": {
+              "ui.png": "the interface (the hero shot on the plugin page)",
+              "og.jpg": "og:image 1200x630",
+              "icon-1024.png": "the app and bundle icon, 1024 square"
+            }
+          }
+        }
       }
     },
     "music": {
