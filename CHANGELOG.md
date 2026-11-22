@@ -1,9 +1,17 @@
 # @boxofrules/assets changelog
 
-## Unreleased
+## 1.7.1 (22 Nov 2026)
 
 - **The Figma mirror.** The Figma file [Assets](https://www.figma.com/design/E0FMgNIR0QTJUvx52pKYtS/Assets) carries the kit as a second access point: `css/tokens.css` as 27 variables in a *Box Of Rules* collection (colours, font families, max width; aliases kept, CSS names as code syntax, the stylesheet's comments as descriptions), a Typography page from the manifest, and all 43 marks as editable vectors, one frame per product, each card named by its repo path with its use and never. `tools/figma-sync.mjs` builds it (`build`, `upload`, `record`, `check`); `figma.json` records the file and what it last received. The repo stays the source.
 - **`tokens.json` fonts corrected**: it still said Syne headings with Oswald retired, three versions after 1.4.0 made Oswald the heading face. Now Oswald + Barlow, Unbounded for plugins, Barlow throughout for Synth.Directory, Anton and Syne retired, matching `css/tokens.css` and the manifest.
+
+## 1.7.0 (11 Nov 2026)
+
+- **Memo Upscale 1.0.0**: `products/plugins/memo-upscale/1.0.0/` (and `latest/`) with `ui.png` (the interface, the hero shot on the plugin page), `og.jpg` (1200x630) and `icon-1024.png`, each with its `.min` and `.webp` siblings. A new plugin in the manifest, so a minor.
+
+## 1.6.1 (11 Nov 2026)
+
+- **BR108 is on the Darkglass Anagram marketplace**: `products/plugins/br108/1.0.0/anagram.png` (and `latest/`), the block's store picture at 600 square with its `.min` and `.webp` siblings, the same slot Box of Bass and Picking Fingers already fill. Made from `images/store/BR108-block-800.png` in the block's own repo.
 
 ## 1.6.0 (20 Sep 2026)
 
