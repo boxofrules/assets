@@ -1,5 +1,10 @@
 # @boxofrules/assets changelog
 
+## 1.7.1 (22 Nov 2026)
+
+- **The Figma mirror.** The Figma file [Assets](https://www.figma.com/design/E0FMgNIR0QTJUvx52pKYtS/Assets) carries the kit as a second access point: `css/tokens.css` as 27 variables in a *Box Of Rules* collection (colours, font families, max width; aliases kept, CSS names as code syntax, the stylesheet's comments as descriptions), a Typography page from the manifest, and all 43 marks as editable vectors, one frame per product, each card named by its repo path with its use and never. `tools/figma-sync.mjs` builds it (`build`, `upload`, `record`, `check`); `figma.json` records the file and what it last received. The repo stays the source.
+- **`tokens.json` fonts corrected**: it still said Syne headings with Oswald retired, three versions after 1.4.0 made Oswald the heading face. Now Oswald + Barlow, Unbounded for plugins, Barlow throughout for Synth.Directory, Anton and Syne retired, matching `css/tokens.css` and the manifest.
+
 ## 1.7.0 (11 Nov 2026)
 
 - **Memo Upscale 1.0.0**: `products/plugins/memo-upscale/1.0.0/` (and `latest/`) with `ui.png` (the interface, the hero shot on the plugin page), `og.jpg` (1200x630) and `icon-1024.png`, each with its `.min` and `.webp` siblings. A new plugin in the manifest, so a minor.
@@ -19,7 +24,7 @@
 ## 1.4.1 (20 Sep 2026)
 
 - **`fonts/desktop/`**: the same faces as TrueType, for native apps and audio plugins, which cannot load woff2. `Oswald-Variable.ttf` (Google Fonts ships no statics for Oswald), `Barlow-Regular.ttf`, `Barlow-Medium.ttf`. The web woff2 files are unchanged.
-- **`typography.desktop-plugins` in the manifest**: which faces each desktop plugin uses, kept separate from the site keys because several plugins deliberately do NOT use the brand faces. Box Of Bass and Picking Fingers take Oswald + Barlow; **BR108 keeps Futura and the OS monospace** and is exempt (James, 1 Sep: "branded fonts are not going to fit a vintage style - this is a neve style", reconfirmed 20 Sep); **Focus is immutable** (James, 20 Sep) and co-branded. A plugin absent from that list has never had a type pass.
+- **`typography.desktop-plugins` in the manifest**: which faces each desktop plugin uses, kept separate from the site keys because several plugins deliberately do NOT use the brand faces. Box Of Bass and Picking Fingers take Oswald + Barlow; **BR108 keeps Futura and the OS monospace** and is exempt (James, 1 Sep: branded fonts do not fit its vintage console style; reconfirmed 20 Sep); **Focus is immutable** (James, 20 Sep) and co-branded. A plugin absent from that list has never had a type pass.
 - **Correction**: `fonts/LICENCE.md` claimed JetBrains Mono was "the plugin-UI datasheet face, shipped inside each plugin". That was never true. No plugin has ever embedded a monospaced font; they all call `juce::Font::getDefaultMonospacedFontName()`, so the face is whatever the OS returns and was never a design decision.
 - **Noted, not shipped**: Futura is proprietary and cannot live in this kit. BR108 on Windows therefore has no Futura and falls back to something arbitrary. An OFL geometric such as Jost* would substitute, but the face is James's call.
 

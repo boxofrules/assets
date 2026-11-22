@@ -112,6 +112,12 @@ tokens.colours.blue;                           // "#69AFBF"
 
 Read `manifest.json` before touching any logo, image or font. `mark()`, `product()` and `musicCover()` throw rather than guess. If the manifest does not cover the surface, ask James rather than inventing.
 
+### In Figma
+
+The same kit is mirrored in the Figma file **[Assets](https://www.figma.com/design/E0FMgNIR0QTJUvx52pKYtS/Assets)**: every token in `css/tokens.css` as a variable in the *Box Of Rules* collection (CSS name as its code syntax), the faces and each product's typography, and every mark in the manifest, one frame per product, named by its path here. This repo is the source; Figma is the second door. A change made in Figma is a proposal: export it and land it here by pull request, or the next sync overwrites it.
+
+`npm run figma -- check` says whether Figma is behind the repo (`figma.json` records what it last received). To sync: `npm run figma -- build` writes the Plugin API scripts to `.figma-sync/`, run each through the Figma MCP's `use_figma` in name order; then `upload_assets` with one URL per mark on the Marks page and `npm run figma -- upload <submitUrl>...` posts the SVGs and writes `05-marks.js`, run that too; finish with `npm run figma -- record`. Every script replaces by name, so a re-run never duplicates.
+
 ## Versioning
 
 Semver, tagged `v<version>`. A patch is a file fixed, a minor is something added (a product, a plugin release, a form), a major is a rename or a removal. Every tag is published to the CDN by the `publish-cdn` workflow. `CHANGELOG.md` says what moved.
