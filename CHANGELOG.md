@@ -1,5 +1,9 @@
 # @boxofrules/assets changelog
 
+## 1.7.2 (24 Nov 2026)
+
+- **The plugins marks' quiet line** (James, 24 Nov: the line was so strong it made the violet hard to read). In `marks/plugins/full.svg`, `logotype.svg` and `card.svg` the amber wave keeps full strength at the sign and fades to 38 percent where it runs behind PLUGINS. Transparency, not a darker amber, so the same file works on dark and light. The violet, the letterforms, the sign and the wave's shape are unchanged; `icon.svg` has no word and is untouched, so the favicons are too. PNG, `.min` and `.webp` siblings re-exported. `tools/plugins-quiet-line.py` applies it (idempotent). The Figma mirror still shows the old line until `npm run figma` is run.
+
 ## 1.7.1 (22 Nov 2026)
 
 - **The Figma mirror.** The Figma file [Assets](https://www.figma.com/design/E0FMgNIR0QTJUvx52pKYtS/Assets) carries the kit as a second access point: `css/tokens.css` as 27 variables in a *Box Of Rules* collection (colours, font families, max width; aliases kept, CSS names as code syntax, the stylesheet's comments as descriptions), a Typography page from the manifest, and all 43 marks as editable vectors, one frame per product, each card named by its repo path with its use and never. `tools/figma-sync.mjs` builds it (`build`, `upload`, `record`, `check`); `figma.json` records the file and what it last received. The repo stays the source.
